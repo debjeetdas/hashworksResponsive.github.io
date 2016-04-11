@@ -1,0 +1,38 @@
+  {% if page.layout == "default" %}
+  <header class="hw-home">
+    {% else %}
+    <header>
+  
+{% endif %}
+
+
+    <!-- logo -->
+                <div class="logo" id="log-fixed" >
+                  <a href="/"></a>
+                </div>
+              <!-- End of logo -->
+
+
+
+             <!--  <div class="triangle top slide"></div> -->
+<!-- <div class="triangle bottom slide"></div>
+ -->
+
+
+  <!-- navigation-bar -->
+          <nav class="navbar navbar-default" style="display: none;">
+            <ul class="nav navbar-nav navbar-right">
+                  {% for item in site.data.nav.main-right %}
+                    <li class="gotham-rounded-light header-links">
+                      <a href="{{ item.url }}">{{ item.text }}</a>
+                    </li>
+                  {% endfor %}
+            </ul>
+                  
+             
+
+            
+          </nav>
+        <!-- navigation-bar -->
+
+</header>
