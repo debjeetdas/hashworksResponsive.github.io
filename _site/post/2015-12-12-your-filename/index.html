@@ -17,14 +17,14 @@
 
 
   
-    <header>
+    <header class="hw-others">
   
 
 
 
 
   <!-- navigation-bar -->
-          <nav class="navbar navbar-default">
+          <nav class="nav-desktop navbar navbar-default">
             <div>
               <!-- logo -->
                 <div class="logo">
@@ -101,8 +101,66 @@
           </nav>
         <!-- navigation-bar -->
 
-</header>
-
+    <nav class="nav-mob">
+      <div class="logo">
+        <a href="/"></a>
+      </div>
+      <div id="nav-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="toc" class="on menu-hide" style="right: 0px;">
+      <p id="button1">&#10006;</p>
+        <ul>  
+            <!-- search bar-->
+            <li>
+              <div id="credits" class=" hidden ">
+                <div id="google-search-div">
+                  <gcse:search></gcse:search>
+                  <i class="fa fa-angle-right search-arrow"></i>
+                </div>
+              </div>
+            </li>
+            <li><a  href="#credits" class="toggle btn"><i class="fa fa-search"></i></a></li>
+            <!-- end  search bar-->          
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio<b class="caret"></b></a>
+              <ul class="dropdown-menu gotham-rounded-light">
+                <li><a href="/portfolio/#DataOps">DataOps</a></li>
+                <li><a href="/portfolio/#DevOps">DevOps</a></li>
+                <li><a href="/portfolio/#DataScience">Data Science</a></li>
+                <li><a href="/portfolio/#Ui-ux">UX/UI</a></li>
+                <li><a href="/portfolio/#Mobility">Mobility</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Engage Us<b class="caret"></b></a>
+              <ul class="dropdown-menu gotham-rounded-light">
+                <li><a href="/our_thinking">Our Thinking</a></li>
+                <li><a href="/collaborative_workforce">Collaborative Workforce</a></li>
+                <li><a href="/bootcamp">Bootcamps</a></li>
+              </ul>
+            </li>
+            <li class="gotham-rounded-light header-links pointer">
+              <a href="javascript:void(0);">Case Study</a>
+            </li>
+            <li class="gotham-rounded-light header-links">
+              <a href="/company">Company</a>
+            </li>
+            <li class="gotham-rounded-light header-links">
+              <a href="/blog">Blog</a>
+            </li>
+            <li class="gotham-rounded-light header-links">
+              <a href="/job_board">Job Board</a>
+            </li>
+            <li class="gotham-rounded-light header-links pointer1">
+              <a href="#">News</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+</header>  
 <main>
 	<section class="banner section_casestudy">
 		<div class="for-blog-back-color">
@@ -248,10 +306,10 @@ s.setAttribute('data-timestamp', +new Date());
     
         <div class="container-fluid">
             <div class="row footer">
-                <div class="col-md-9 hw-copyright">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-8 hw-copyright">
                     <p class="gotham-rounded-light">© 2014 Hashworks All Rights Reserved</p>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 social-share">
                   <a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons"  target="new">
                   <!-- <span > -->
                     <i class="fa fa-circle-thin fa-stack-2x"></i>
@@ -276,4 +334,3 @@ s.setAttribute('data-timestamp', +new Date());
       </footer>
  
 </div>
-
