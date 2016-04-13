@@ -1,6 +1,18 @@
 .talent .li-tab-mar{
     display: table;
 }
+.fa.fa-times.job-close.job-close-1 {
+    display: block;
+}
+.lets-work-heading{
+    display: none;
+}
+  .gotham-rounded-bok.hw-heading.collaborative-apply-heading {
+    display: block;
+}
+.gotham-rounded-bok.hw-heading.collaborative-apply-heading.collaborative-apply-heading-1 {
+    display: none;
+}
 @media screen and (max-width: 1199px) {
 	.cw-desk{
 	display: block;
@@ -89,6 +101,31 @@
     .input-height{
  height: 50px;
     }
+    .collaborative-form-control{
+    height: 50px;
+    padding: 14px 0;
+    font-size: 14px;
+}
+.collaborative-input-group{
+ padding: 16px 21px 0;
+}
+.form-col{
+    margin-bottom: 8px;
+}
+.textarea-form-control{
+    height: 100px;
+}
+.row.ms-row-mar.form-col-sec {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.job-close{
+margin-right: 0;
+margin-top:0;
+}
+.ms-row-mar-1 {
+    margin-top: 6px;
+}
 }
 @media screen and (max-width: 767px) {
     .carousel-padding {
@@ -119,7 +156,80 @@ line-height: 16.5px;
 .hw-engage-cont h2, .paterner-heading {
  font-size: 12px;
 }
-.hw-copyright {
+.hw-copyright.gotham-rounded-light.collaborative-employee-para {
     font-size: 10px;
 }
+.gotham-rounded-bok.hw-heading.collaborative-apply-heading {
+    font-size: 12px;
+}
+.gotham-rounded-bok.hw-heading.collaborative-apply-heading {
+    display: none;
+}
+.gotham-rounded-bok.hw-heading.collaborative-apply-heading.collaborative-apply-heading-1 {
+    display: block;
+}
+.gotham-rounded-bok.hw-heading.collaborative-apply-heading.collaborative-apply-heading-1 {
+    margin-bottom: 5px;
+}
+.gotham-rounded-bok.hw-heading.hw-copyright.gotham-rounded-light.collaborative-apply-heading.collaborative-apply-heading-1 {
+    margin-top: 0;
+}
+.gotham-rounded-bold.hw-para.collaborative-conventional {
+    font-size: 12px;
+}
+.collaborative-font-family {
+    font-size: 10px;
+}
+.hw-engage-cont {
+    margin: 20px 0 30px;
+}
+
+.fa.fa-times.job-close.job-close-1 {
+    display: none;
+}
+.lets-work-heading{
+    display: block;
+    color: #3f4041;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "gotham-rounded-light";
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+.collaborative-attach-file{
+    height: 50px;
+}
+#file-upload{
+    height: 50px;
+    margin-left:0px;
+    width: 100%;
+}
+.collaborative-attach-text{
+    bottom: 61%;
+    left: 20%;
+    font-family: "gotham-rounded-light";
+    font-size: 14px;
+}
+.collaborative-submit-background{
+    height: 50px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.collaborative-submit-btn {
+    height: 50px;
+    left: 0;
+    margin-top: 0;
+    padding: 0;
+}
+.collaborative-img-submit,.collaborative-submit{
+    margin: 0 5px;
+}
+.submit-resume.hr-display {
+    bottom: 21%;
+    position: absolute;
+}
+#submit-btn {
+    bottom: 5px;
+    height: 50px;
+    left: 0;
 }
