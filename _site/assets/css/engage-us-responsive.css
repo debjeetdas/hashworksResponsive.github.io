@@ -118,6 +118,31 @@
 	.ribbon-for-mobile{
 		display: none;
 	}
+    .es-popup{
+        margin-top: 30px;
+    }
+    .es-pop-head{
+        font-family:"gotham-rounded-light";
+        font-size: 20px;
+        color: #3f4041;
+    }
+    .close-pop {
+    cursor: pointer;
+    float: right;
+    }
+    .es-input-br-btm {
+    margin-bottom: 10px;
+    }
+    .display-content{
+        display: table;
+    }
+    .our-heading-custom-btn {
+        font-size: 12px;
+        padding: 6px;
+    }
+    .thinking-height{
+        background-color: #e8e8e8;
+    }
 }
 
 @media screen and (min-width:320px) and (max-width: 767px){
@@ -266,11 +291,20 @@ h2 {
     .tab-view{
     	display: none;
     }
+    .tab-mobile{
+        display: none;
+    }
+    .our-thinking-responsive-ribbon{
+        display: block;
+    }
+    .mobile-ribbon{
+        display: none;
+    }
 }
 @media screen and (min-width:768px) and (max-width: 1199px){
-	.our-thinking-responsive{
+	/*.our-thinking-responsive{
    		display: none;
-    }
+    }*/
     .tab-view{
     	display: block;
     }
@@ -293,8 +327,10 @@ h2 {
     position: fixed;
     right: 10px;
 }
-
-.collapse-image-2 {
+.our-thinking-responsive-ribbon{
+    display: none;
+}
+#collapse-image-2 {
     bottom: 2%;
     display: none;
     left: 10px;
@@ -303,7 +339,7 @@ h2 {
     transform: rotate(90deg);
 }
 
-.collapse-image-3 {
+#collapse-image-3 {
     display: none;
     opacity: 0;
     position: fixed;
@@ -311,7 +347,7 @@ h2 {
     top: auto;
     transform: rotate(-90deg);
 }
-.collapse-image-4 {
+#collapse-image-4 {
     display: none;
     left: 10px;
     opacity: 0;
@@ -319,7 +355,7 @@ h2 {
     top: auto;
     transform: rotate(180deg);
 }
-.div-top-left {
+#div-top-left {
     height: 25.7vh;
     left: 0;
     overflow: hidden;
@@ -328,9 +364,10 @@ h2 {
     padding-top: 15px;
     position: absolute;
     top: 0;
+    background-color: #e8e8e8;
 }
 
-.div-top-right {
+#div-top-right {
     height: 25.7vh;
     overflow: hidden;
     padding-left: 0;
@@ -339,8 +376,9 @@ h2 {
     position: absolute;
     right: 0;
     top: 0;
+    background-color: #e8e8e8;
 }
-.div-bottom-left {
+#div-bottom-left {
     bottom: 0;
     height: 25.7vh;
     left: 0;
@@ -349,9 +387,10 @@ h2 {
     padding-right: 0;
     padding-top: 15px;
     position: absolute;
+    background-color: #e8e8e8;
 }
 
-.div-bottom-right {
+#div-bottom-right {
     bottom: 0;
     height: 25.7vh;
     overflow: hidden;
@@ -360,28 +399,45 @@ h2 {
     padding-top: 15px;
     position: absolute;
     right: 0;
+    background-color: #e8e8e8;
 }
-.collapse-button > img {
-    z-index: 10;
-}
-.thinking-height2 {
-    height: 25.7vh;
-}
-.div-margin-left {
-    margin-left: 20px;
-    margin-right: 20px;
-}
+    .collapse-button > img {
+        z-index: 10;
+    }
+    .thinking-height2 {
+        height: 25.7vh;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .div-margin-left {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .mobile-ribbon{
+        display: block;
+    }
+    .hw-buiseness-padding-left{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .hw-buiseness-padding-right{
+        padding-right:50px;
+        padding-left: 50px;
+    }
 }
 @media screen and (min-width:320px) and (max-width: 767px){
+    .our-thinking-responsive-ribbon{
+        display: none;
+    }
 	.our-thinking-responsive{
    		display: none;
    	}
    	.tab-view{
     	display: none;
     }
-    .tab-mob-views{
+    /*.tab-mob-views{
     	display: block;
-    }
+    }*/
     .our-heading-custom-btn{
     	font-size: 12px;
     	background: #f9d602 none repeat scroll 0 0;
@@ -449,6 +505,9 @@ h2 {
     .our-text-align{
         text-align: center;
     }
+    .mobile-ribbon{
+        display: block;
+    }
 
 }
 /*our thinking responsive ends*/
@@ -460,4 +519,6 @@ h2 {
 	.tab-img{
     	width:100%;
     }
-
+    .nav.nav-tabs.p-flex {
+        text-align: center;
+    }

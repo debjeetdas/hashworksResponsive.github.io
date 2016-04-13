@@ -1150,7 +1150,7 @@ $("#div2-right-div-part4").css("display", "none");
 
 
 // responsive ends
-
+if($(window).width() > 1199){
 var which_one_clicked = 0;
 
   $("#div-top-left").click(function(){
@@ -1310,7 +1310,7 @@ var which_one_clicked = 0;
       $("#div-top-left").animate({'width' : '50%','height' : '38.7vh'},0); 
     });
 
-
+}
 
 /*for burger menu*/
  // $('#nav-icon1').click(function(){
