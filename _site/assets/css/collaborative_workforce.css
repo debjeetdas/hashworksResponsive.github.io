@@ -1,0 +1,109 @@
+.talent .li-tab-mar{
+    display: table;
+}
+@media screen and (max-width: 1199px) {
+	.cw-desk{
+	display: block;
+}
+.cw-mob{
+	display: none;
+}
+.collaborative-heading {
+    color: #000;
+    font-family: "gotham-rounded-light";
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.collaborative-para{
+	font-family: "gotham-rounded-light";
+    font-size: 20px;
+    color: #343434;
+    line-height: 30px;
+}
+.heading-caro-padd {
+    padding: 0;
+}
+.carousel-padding {
+    padding:0 0 24px;
+    }
+    .container{
+    	width: 100%;
+    }
+    .c-flex {
+    width: 38%;
+}
+.hw-te-tab.hr-display {
+    padding-top: 0;
+}
+.line-padding {
+    padding-top: 0;
+}
+.text-center.hw-heading.hr-display {
+    color: #000;
+    font-size: 20px;
+}
+.hw-engage-cont h2,.paterner-heading {
+    color: #000;
+    font-family: "gotham-rounded-light";
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+.collaborative-employee-para{
+	color: #000;
+    font-family: "gotham-rounded-light";
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+}
+.gotham-rounded-bok.hw-heading.collaborative-apply-heading{
+	color: #ee2b7b;
+	font-size: 18px;
+    font-family: "gotham-rounded-light";
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.gotham-rounded-bold.hw-para.collaborative-conventional{
+	color: #3f4041;
+	font-size: 18px;
+    font-family: "gotham-rounded-light";
+    font-weight: bold;
+     padding-bottom: 4px;
+}
+.collaborative-font-family{
+	color: #737373;
+	font-size: 14px;
+    font-family: "gotham-rounded-light";
+}
+#map{
+	height: 190px;
+	width: 100%;
+	 margin-bottom: 20px;
+}
+.ms-form-mar {
+    margin-top: 20px;
+    }
+    .input-height{
+ height: 50px;
+    }
+}
+@media screen and (max-width: 1199px) {
+.collabrative-header{
+margin-top: 0;
+margin-bottom: 10px;
+font-size: 18px;
+font-weight: bold;
+color: #000;
+font-family: "gotham-rounded-light";
+}
+.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height {
+    margin-top: 0;
+    font-size: 12px;
+color: #000;
+font-family: "gotham-rounded-light";
+line-height: 16.5px;
+}
+}
