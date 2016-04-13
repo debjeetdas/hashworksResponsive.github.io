@@ -429,10 +429,20 @@ h2 {
 	.bg-we-partner{
 		background-color: #b3b3b3;
 	}
-	.div-margin-left {
-    margin-left: 20px;
-    margin-right: 20px;
-}
+	.our-margin-left {
+    margin-left: 23px;
+    margin-right: 23px;
+    }
+    .our-engage-cont {
+    margin: 30px 0 0;
+    }
+    .our-clearfix{
+        padding: 0px;
+        margin: 0px;
+    }
+    .our-text-align{
+        text-align: center;
+    }
 
 }
 /*our thinking responsive ends*/

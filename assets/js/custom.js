@@ -2100,6 +2100,30 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
           }
         ] 
     });
+    $('.carousel-div').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 460,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ] 
+    });
     var pf_vh = $('.pf-vh').length;
     for(var i=1; i<=pf_vh; i++){
       $('#pvh-'+i).on('click',function(){
