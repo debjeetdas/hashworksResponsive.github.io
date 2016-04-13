@@ -2027,7 +2027,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
     });
     $('.hw-others #nav-icon1').on('click', function() {
         $('.hw-others #toc').animate({
-            width: '50%',
+            width: '100%',
             right: 0
         });
     });
@@ -2100,6 +2100,19 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
           }
         ] 
     });
+    var pf_vh = $('.pf-vh').length;
+    for(var i=1; i<=pf_vh; i++){
+      $('#pvh-'+i).on('click',function(){
+        var pvhId = $(this).attr('id');
+        var pvhId_sub = pvhId.substring(4,5);
+        for(var j=1; j<=pf_vh;j++){
+          $('#pvh-'+j).removeClass('pvh-active');
+          $('#pvd-'+j).removeClass('pvd-active');
+        }
+        $('#pvh-'+pvhId_sub).addClass('pvh-active');
+        $('#pvd-'+pvhId_sub).addClass('pvd-active');
+      });
+    }
     $('.carousel-div').slick({
         dots: false,
         infinite: false,
@@ -2124,17 +2137,17 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
           }
         ] 
     });
-    var pf_vh = $('.pf-vh').length;
-    for(var i=1; i<=pf_vh; i++){
-      $('#pvh-'+i).on('click',function(){
-        var pvhId = $(this).attr('id');
-        var pvhId_sub = pvhId.substring(4,5);
-        for(var j=1; j<=pf_vh;j++){
-          $('#pvh-'+j).removeClass('pvh-active');
-          $('#pvd-'+j).removeClass('pvd-active');
+    var tab_count = $('.tab-val').length;
+    for(var i=1; i<=tab_count; i++){
+      $('#tab-'+i).on('click',function(){
+        var tabId = $(this).attr('id');
+        var tabId_sub = tabId.substring(4,5);
+        for(var j=1; j<=tab_count;j++){
+          $('#tab-'+j).removeClass('active');
+          $('#tabContent-'+j).removeClass('active');
         }
-        $('#pvh-'+pvhId_sub).addClass('pvh-active');
-        $('#pvd-'+pvhId_sub).addClass('pvd-active');
+        $('#tab-'+tabId_sub).addClass('active');
+        $('#tabContent-'+tabId_sub).addClass('active');
       });
     }
     /* end : Mobile code */
