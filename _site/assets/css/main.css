@@ -3816,6 +3816,10 @@ img#big-ipad {
 	.hw-tab-heading{
 		font-size: 14px;
 	}
+	.hw-work-cont .img-outer{
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
 }
 @media screen and (max-width: 360px){
 	#categories ul li span{
@@ -3961,6 +3965,8 @@ img#big-ipad {
 		position: relative;
 		border: medium none;
     	box-shadow: none;
+    	width: 100%;
+    	margin-left: 20px;
 	}
 	.gsc-input-box{
 		border-radius: 5px;
@@ -4005,7 +4011,7 @@ img#big-ipad {
 		padding: 0;
 	}
 }
-@media screen and (max-width: 767px){	
+@media screen and (max-width: 767px){
 	.social-icons{
 		margin-right: 10px;
 	}
@@ -4029,3 +4035,22 @@ img#big-ipad {
 	}
 }
 /* End : footer.css */
+
+
+/* Blue ribbon */
+@media screen and (min-width: 768px){
+	.let-us-talk-td{
+		display: block;
+	}
+	.let-us-talk-mob{
+		display: none;
+	}
+}
+@media screen and (max-width: 767px){
+	.let-us-talk-td{
+		display: none;
+	}
+	.let-us-talk-mob{
+		display: block;
+	}
+}
