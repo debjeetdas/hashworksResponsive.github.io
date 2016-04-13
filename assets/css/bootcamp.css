@@ -2,6 +2,9 @@
 	.bc-desk{
 	display: none;
 }
+.hw-tab-heading {
+	padding-top: 0;
+}
 .bc-mob{
 	display: block;
 }
@@ -111,7 +114,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 .text-justify.bootcamp-hw-tab-para{
 	font-family:"gotham-rounded-light";
-	font-size: 10px;
+	font-size: 14px;
 	color: #343434;
 	padding-bottom: 0;
 	line-height: 16.5px;
@@ -259,7 +262,7 @@ input[type="checkbox"], input[type="radio"] {
 	font-weight: bold;
 }
 .text-justify.bootcamp-hw-tab-para{
-	font-size: 14px;
+	font-size: 10px;
 }
 .bootcamp-clearfix{
 	margin-top: 10px;
@@ -275,5 +278,8 @@ input[type="checkbox"], input[type="radio"] {
 }
 .btn.btn-danger.bootcamp-btn-danger.bootcamp-dropdown-menu:focus:active {
     border-left: 2px solid #0ab4c5;
+}
+.clearfix.pull-right {
+    padding-top: 15px;
 }
 }

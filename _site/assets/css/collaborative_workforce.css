@@ -31,7 +31,7 @@
     .container{
     	width: 100%;
     }
-    .c-flex {
+    .c-flex-1 {
     width: 38%;
 }
 .hw-te-tab.hr-display {
@@ -108,5 +108,18 @@ font-family: "gotham-rounded-light";
 color: #000;
 font-family: "gotham-rounded-light";
 line-height: 16.5px;
+}
+.text-center.hw-heading.hr-display {
+    font-size: 12px;
+}
+.hw-te-tab.hr-display.c-flex-anchor {
+    padding-left: 0;
+    padding-right: 0;
+}
+.hw-engage-cont h2, .paterner-heading {
+ font-size: 12px;
+}
+.hw-copyright {
+    font-size: 10px;
 }
 }
