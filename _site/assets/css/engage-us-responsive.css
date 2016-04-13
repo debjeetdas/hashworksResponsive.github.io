@@ -154,11 +154,11 @@
 		display: none;
 	}
 	.close-pop {
-    cursor: pointer;
-    float: right;
+        cursor: pointer;
+        float: right;
 	}
 	.es-input-br-btm{
-	margin-bottom: 10px;
+	   margin-bottom: 10px;
 	}
 	.es-attach-span{
 		color: #fff;
@@ -167,13 +167,19 @@
 		font-size: 14px;
 	}
 	.es-popup{
-    margin-top: 30px;
+        margin-top: 30px;
 	}
 	.es-pop-head{
      	font-family:"gotham-rounded-light";
      	font-size: 20px;
      	color: #3f4041;
 	}
+    .display-content{
+        display: table;
+    }
+    .carousel-div{
+        width:100%;
+    }
 }
 
 

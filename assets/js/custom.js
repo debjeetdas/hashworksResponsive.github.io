@@ -2103,7 +2103,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
     $('.carousel-div').slick({
         dots: false,
         infinite: false,
-        speed: 300,
+        speed: 500,
         slidesToShow: 1,
         adaptiveHeight: true,
         arrows: true,
@@ -2111,7 +2111,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
           {
             breakpoint: 767,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2,
               slidesToScroll: 1
             }
           },
