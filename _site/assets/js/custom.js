@@ -1999,6 +1999,20 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
 
 
   /* start : Mobile code */
+    $('.hwd #nav-icon1').on('click', function() {
+        $('.hwd #toc').animate({
+            width: '140px',
+            right: 0
+        });
+        $(".hide-scroll").hide();
+    });
+    $('.hwd #button1').on('click', function() {
+        $('.hwd #toc').animate({
+            width: 0,
+            right: 0
+        });
+        $(".hide-scroll").show();
+    });
     $('.hwmt #nav-icon1').on('click', function() {
         $('.hwmt #toc').animate({
             width: '140px',
