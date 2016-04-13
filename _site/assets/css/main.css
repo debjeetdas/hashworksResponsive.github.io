@@ -3998,7 +3998,7 @@ img#big-ipad {
 	.social-share{
 		padding: 0 10px 0 0;
 	}
-	.hw-copyright{
+	footer .hw-copyright{
 		font-size: 14px;
 	}
 	.footer{
@@ -4017,13 +4017,13 @@ img#big-ipad {
 	.hw-socialshare{
 		font-size: 14px;
 	}
-	.hw-copyright{
+	footer .hw-copyright{
 		font-size: 12px;
 		padding-right: 0;
 	}
 }
 @media screen and (max-width: 420px){
-	.hw-copyright{
+	footer .hw-copyright{
 		font-size: 10px;
 		padding-right: 0;
 	}
