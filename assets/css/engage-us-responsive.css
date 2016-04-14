@@ -300,6 +300,10 @@ h2 {
     .mobile-ribbon{
         display: none;
     }
+    .thinking-height2 {
+        height: 38.7vh;
+    }
+
 }
 @media screen and (min-width:768px) and (max-width: 1199px){
 	/*.our-thinking-responsive{
@@ -424,11 +428,11 @@ h2 {
         padding-right:50px;
         padding-left: 50px;
     }
-    .heading{
+    .mob-font-size{
         color: #000000;
         font-size: 20px;
     }
-    .hw-contact-no {
+    .our-contact-no {
         color: #000;
         font-size: 14px;
     }
@@ -466,12 +470,12 @@ h2 {
 	.tab-mobile{
 		display: block;
 	}
-	.hw-font-heading {
+	/*.hw-font-heading {
     	font-size: 18px;
 	}
 	.hw-copyright {
     	font-size: 12px;
-	}
+	}*/
 	.our-copyright{
 		font-size: 10px;
 	}
@@ -516,7 +520,66 @@ h2 {
     .mobile-ribbon{
         display: block;
     }
-
+    .mob-business-value {
+        margin: 0 auto;
+        width: 80px;
+        cursor: pointer;
+    }
+    .mob-business-head{
+        font-size: 12px;
+        color: #ee2b7b;
+        font-family:"gotham-rounded-light"; 
+        padding-left: 3%;
+        padding-top: 3%
+    }
+    .mob-we-resolve{
+        font-size: 11px;
+        color: #000;
+        font-family:"gotham-rounded-light";  
+    }
+    .mob-business-content{
+        background-color: #ddd;
+    }
+    .mob-business-para{
+        font-size: 10px;
+        color: #000;
+        font-family:"gotham-rounded-light";
+        padding-left: 4%;
+        padding-right: 4%;
+        text-align: justify;
+        line-height: 17px;
+    }
+    .business-show{
+        display: none;
+    }
+    #mob-nav > li.active > a, #mob-nav > li.active > a:focus, #mob-nav > li.active > a:hover {
+        color: #ee2b7b;
+        border-bottom: none;
+    }
+     #mob-nav{
+        border: none;
+     }
+     #mob-nav >li > a{
+        padding: 0px;
+     }
+    #mob-nav.nav-tabs.mob-nav-tab {
+        width: 100%;
+    }
+    #mob-nav.nav-tabs.mob-nav-tab {
+    margin-top: 2%;
+    }
+    .li-width{
+        width: 25%;
+    }
+    .li-width1{
+        width: 28%;
+    }
+    .li-width2{
+        width: 22%;
+    }
+    .resolve-center{
+        text-align: right;
+    }
 }
 /*our thinking responsive ends*/
 @media screen and (max-width:419px){

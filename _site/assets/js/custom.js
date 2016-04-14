@@ -2122,7 +2122,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         arrows: true,
         responsive: [
           {
-            breakpoint: 767,
+            breakpoint: 768,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1
@@ -2150,6 +2150,21 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('#tabContent-'+tabId_sub).addClass('active');
       });
     }
-    /* end : Mobile code */
 
+     // var mob_tab_count = $('.text').length;
+     // for(var i=1; i<=tab_count; i++){
+     //    $('#tab-'+i).on('click',function(){
+
+     //        });
+     // }
+    /* end : Mobile code */
+    $('.text').on('click',function(){
+        $('.business-show').show();
+        $('.mobile-business-show').hide();
+     });
+     $('.mob-business-value').on('click',function(){
+        $('.business-show').hide();
+        $('.mobile-business-show').show();
+     });
+    
 });
