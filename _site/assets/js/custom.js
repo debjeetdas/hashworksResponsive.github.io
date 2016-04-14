@@ -2158,13 +2158,53 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
      //        });
      // }
     /* end : Mobile code */
-    $('.text').on('click',function(){
-        $('.business-show').show();
-        $('.mobile-business-show').hide();
-     });
+    // $('.text').on('click',function(){
+    //     $('.business-show').show();
+    //     $('.mobile-business-show').hide();
+    //  });
      $('.mob-business-value').on('click',function(){
         $('.business-show').hide();
         $('.mobile-business-show').show();
+        $('#mob-nav li').removeClass('active');
+        $('#home').removeClass('active in');
+        $('#menu1').removeClass('active in');
+        $('#menu2').removeClass('active in');
+        $('#menu3').removeClass('active in');
+        $('.mob-busval-show').show();
+        $('.bs-example').show();
+     });
+     
+     $('.bg-we-resolve').on('click',function(){
+        $('.business-show').show();
+        $('.js-class1').addClass('active');
+         $('#home').addClass('active in');
+        $('.mobile-business-show').hide();
+        $('.mob-busval-show').hide();
+        $('.bs-example').hide();
+     });
+     $('.bg-we-practice').on('click',function(){
+        $('.business-show').show();
+        $('.js-class2').addClass('active');
+         $('#menu1').addClass('active in');
+        $('.mobile-business-show').hide();
+        $('.mob-busval-show').hide();
+        $('.bs-example').hide();
+     });
+     $('.bg-we-acc').on('click',function(){
+        $('.business-show').show();
+        $('.js-class3').addClass('active');
+         $('#menu2').addClass('active in');
+        $('.mobile-business-show').hide();
+        $('.mob-busval-show').hide();
+        $('.bs-example').hide();
+     });
+     $('.bg-we-partner').on('click',function(){
+        $('.business-show').show();
+        $('.js-class4').addClass('active');
+         $('#menu3').addClass('active in');
+        $('.mobile-business-show').hide();
+        $('.mob-busval-show').hide();
+        $('.bs-example').hide();
      });
     
 });
