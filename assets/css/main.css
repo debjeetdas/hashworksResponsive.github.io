@@ -1835,12 +1835,13 @@ width: 100%;
 	}
 
 	.blog-grid > li {
-	  width: 25%;
+	  /*width: 25%;*/
 	  /*width: 33.33333%;*/
 	  float: left;
 	  height: auto;
 	  overflow: hidden; /*without this li will create more height*/
 	  line-height: 2.25em;
+	  margin: 10px 0;
 	}	
 	#google-search-div i.fa.fa-angle-right.search-arrow:hover {
     color: #ee2b7b;
@@ -1894,7 +1895,7 @@ width: 100%;
 	    background: white none repeat scroll 0 0;
 	    padding: 50px;
 	    padding-top: 0px;
-	    width: 50%;
+	    /*width: 50%;*/
 	  }
 
 	  .blog-grid .filters select {
@@ -1941,9 +1942,9 @@ width: 100%;
 	    padding: 12px 0px 12px 0px;
 	}
 
-	.blog-grid li:nth-child(2n) {
+	/*.blog-grid li:nth-child(2n) {
 	   background: #67b4bb none repeat scroll 0 0;
-	}
+	}*/
 
 	.blog-grid .image-wrapper {
 	  position: relative;
@@ -2423,7 +2424,7 @@ width: 100%;
 		color: #000;
 		background-color: #fcfcfc;
 	}
-
+/*
 @media screen and (max-width: 868px) {
   .blog-grid > li {
     width: 33.33%;
@@ -2432,8 +2433,8 @@ width: 100%;
   .blog-grid .intro-wrapper {
     width: 66.66%;
   }
-}
-@media screen and (max-width: 750px) {
+}*/
+/*@media screen and (max-width: 750px) {
   .blog-grid > li {
     width: 50%;
   }
@@ -2442,13 +2443,13 @@ width: 100%;
     width: 100%;
   }
 }
-
-@media screen and (max-width: 450px) {
+*/
+/*@media screen and (max-width: 450px) {
   .blog-grid > li {
     width: 100%;
   }
 
-}
+}*/
 
 
 /* end of casestudy page*/
@@ -4054,3 +4055,15 @@ img#big-ipad {
 		display: block;
 	}
 }
+/* End : Blue ribbon */
+
+/* Start : blog.css*/
+@media screen and (max-width: 640px){
+	.col-xxs-12{
+		width:100%;
+	}
+}
+@media screen and (max-width: 1199px){
+	
+}
+/* End : blog.css*/
