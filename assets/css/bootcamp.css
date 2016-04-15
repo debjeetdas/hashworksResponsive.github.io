@@ -179,7 +179,7 @@
 
 @media screen and (max-width: 767px) {
  
-  #bootcamp-filter-controls-1 {
+  .bc-desk {
     display: none;
   }
   .bc-mob{
