@@ -601,7 +601,10 @@ h2 {
     }
     .tab-mobile .nav li {
         color: #000;
-       display: table;
+      /* display: block;*/
+    }
+    .tab-mobile .slick-slide img{
+        display: inline;
     }
     /*.tab-mobile .nav-tabs > li.active > a, .tab-mobile .nav-tabs > li.active > a:focus, 
     .tab-mobile .nav-tabs > li.active > a:hover{
