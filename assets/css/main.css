@@ -3643,7 +3643,11 @@ img#big-ipad {
 
 @media screen and (max-width: 1199px){
 	.hw-font-heading{
-		font-size: 32px;
+		font-size: 32px !important;
+		margin-top: 50px;
+	}
+	.h2-color {
+		color: #343434;
 	}
 	.hw-heading{
 		font-size: 20px;
@@ -3765,7 +3769,7 @@ img#big-ipad {
 	.client-backgrnd{
 		padding-top: 0;
 	}
-	.hw-tab-heading{
+	.hw-works .hw-tab-heading{
 		padding-top: 23px;
 		font-size: 18px;
 	}
@@ -3774,6 +3778,7 @@ img#big-ipad {
 	}
 	.para{
 		margin-left: 0;
+		color: #000;
 	}
 }
 @media screen and (max-width: 767px){	
@@ -3847,21 +3852,24 @@ img#big-ipad {
 	.company-value {
 	    color: #ee2b7b;
 	    font-size: 24px;
+	    margin-top: 25px !important;
 	}
 	.hw-company-gen-txt{
 		text-align: justify;
 	}
 	.hw-company-gen-txt,.company-det{
 		font-size: 16px;
+		color: #000
 	}
 	.hw-heading.drop-text {
 	    font-family: "gotham-rounded-book";
 	    font-size: 20px;
+	    color: #000;
 	}
 	.drop-icon{
 		display: none;
 	}
-	.hw-contact-no{
+	.company-btm .hw-contact-no{
 		font-size: 20px;
 	}
 }
@@ -3869,14 +3877,14 @@ img#big-ipad {
 	.clr-black{
 		display: none;
 	}
-	.company-value,.hw-contact-no,.company-det {
+	.company-value,.company-btm .hw-contact-no,.company-det {
 	    font-size: 12px;
 	}
 	.hw-company-gen-txt{
 		font-size: 10px;
 	}
 	.hw-heading.drop-text {
-	    font-size: 16px;
+	    font-size: 14px;
 	}
 	.company-det{
 		text-align: center;
