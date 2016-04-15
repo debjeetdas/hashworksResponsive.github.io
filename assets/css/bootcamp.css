@@ -1,4 +1,22 @@
 @media screen and (max-width: 1199px) {
+  .bc-desk div#bootcamp-filter-total {
+    padding-top: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  #bootcamp-filter-controls{
+    padding-top: 0;
+  }
+  .bc-desk .hw-copyright.gotham-rounded-light{
+    margin-top: 0;
+  }
+  .bc-desk #bootcamp-filter-total {
+      margin-top: 0;
+  }
+  .bc-desk div#bootcamp-filter-controls {
+    padding-top: 0px;
+    margin-bottom: 25px;
+  }
   .bc-desk {
     display: block;
   }

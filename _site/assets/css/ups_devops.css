@@ -98,6 +98,9 @@
 }
 }
 @media screen and (max-width: 767px) {
+#ups-devops .li-tab-mar > img {
+    width: 70%;
+}
 .devops-heading {
     background-color: #adabab;
     color: #fff;
