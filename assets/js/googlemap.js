@@ -250,7 +250,7 @@
                                  '<input type="text" name="Email" value="577, Sector 3, HSR Layout, Bengaluru, Karnataka 560102, India" placeholder="To:"/>'+
                                  '</p>'+
                                  '<p>'+
-                                 '<input type="button" id="get-direction-btn" onclick="submit(event)" value="Get Direction"/>'+
+                                 '<input type="button" id="get-direction-btn1" onclick="submit(event)" value="Get Direction"/>'+
                                  '</p>'+
                             '</div>'
                           ]
@@ -262,7 +262,7 @@
                   });
                   google.maps.event.addListener(marker1, 'click', (function(marker1, i1) {
                     return function() {
-                      infowindow1.setContent(infoWindowContent1[i][0]);
+                      infowindow1.setContent(infoWindowContent1[i1][0]);
                       infowindow1.open(map1, marker1);
                     }
                   })(marker1, i1));
