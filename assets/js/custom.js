@@ -2150,6 +2150,13 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('#tabContent-'+tabId_sub).addClass('active');
       });
     }
+    setTimeout(function () {      
+    var heights=$(".pf-mob .col-20").map(function (){
+                           return $(this).height();
+                         }).get(),
+      maxHeight_mob = Math.max.apply(null, heights);
+      $('.pf-mob .col-20 .hw-work-cont').css({height:maxHeight_mob+'px'});
+    },1000);
     /* end : Mobile code */
 
 });
