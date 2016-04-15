@@ -3826,6 +3826,12 @@ img#big-ipad {
 		padding-top: 0;
 		padding-bottom: 10px;
 	}
+	.pf-mob .slick-prev {
+	    left: -25px;
+	}
+	.pf-mob .slick-next {
+	    right: -25px;
+	}
 }
 @media screen and (max-width: 360px){
 	#categories ul li span{
