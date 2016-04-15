@@ -4171,7 +4171,7 @@ img#big-ipad {
 		font-size: 14px;
 	}
 	.blog-margin .blog-content-wrapper h3{
-		height: 28px;
+		height: 35px;
 		text-align: left;
 	}
 	.blog-grid a.button{
@@ -4274,14 +4274,10 @@ img#big-ipad {
 		color: #737373;
 	}
 	.blog-content-wrapper h3 > a{
-		font-size: 14px;
+		line-height: 20px;
 	}
 	.nov-blog-like-icon.fa.fa-heart-o{
 		font-size: 14px;
-	}
-	.blog-margin .blog-content-wrapper h3{
-		height: 28px;
-		text-align: left;
 	}
 	.blog-grid a.button{
 		padding: 25px 20%;
@@ -4293,3 +4289,122 @@ img#big-ipad {
 		padding-right: 15px;
 	}
 }
+
+/* Start : Blog.css */
+@media screen and (min-width: 1200px){
+	.hero-image-desktop{
+		display: block;
+	}
+	.hero-image-mob,.blog-author,.blog-date{
+		display: none;
+	}
+}
+@media screen and (max-width: 1199px){
+	.blog-details{
+		color: #000;
+	}
+	.banner-bg-desktop,.hero-image-desktop,.blog-source,.blog-details .line{
+		display: none;
+	}
+	.hero-image-mob{
+		display: block;
+	}
+	.blog-details .ribon-font,.blog-author{
+		font-family: "gotham-rounded-light"; 
+	}
+	.blog-author{
+		text-align: left;
+		font-size: 16px;
+		padding: 20px 0 15px;
+		color: #343434;
+	}
+	.blog-header{
+		position: relative;
+	}
+	.blog-details .ribon-font{
+		font-size: 28px;
+		text-align: left;
+	}
+	.blog-details .blog-content {
+	    padding: 20px 15px 0 5px;
+	}
+	.blog-details .hw-para{
+		font-size: 16px;
+		padding-bottom: 10px;
+	}
+	.blog-ref-img{
+		padding-bottom: 0;
+	}
+	.desktop-blog-hr {
+	    margin: 10px 0 0;
+	}
+	.blog-date {
+	    min-width: 72px;
+	    width: 10%;
+	}
+	.blog-date, .blog-tab-content {
+	    float: left;
+	}
+	.blog-tab-content{		
+	    width: 90%;
+	}
+	.blog-details .date-bg{
+		background-color: #52af83;
+	    color: #fff;
+	    display: table;
+	    font-family: "gotham-rounded-light";
+	    font-size: 16px;
+	    height: 60px;
+	    padding-top: 5px;
+	    text-align: center;
+	    width: 60px;
+	}
+	.blog-details .date-bg span{
+		float: left;
+		display: block;
+		width: 100%;
+	}
+	.col-testimoni {
+	    margin-top: 25px;
+	}
+}
+@media screen and (max-width: 767px){
+	.desktop-blog-hr,.pb-by{
+		display: none;
+	}
+	.blog-details .ribon-font{
+		font-size: 18px;
+	}
+	.blog-author{
+		font-size: 12px;
+	}
+	.blog-details .ribon-font{
+		font-size: 28px;
+		text-align: left;
+	}
+	.blog-details .ribon-font{
+		font-size: 18px;
+		text-align: center;
+		margin-top: -3px;
+	}
+	.blog-author{
+		text-align: center;
+	}
+	.blog-details .line{
+		display: block;
+	}
+	.blog-details .hw-para{
+		font-size: 10px;
+	}
+	.blog-date{
+		display: none;
+	}
+	.blog-tab-content{
+		float: none;
+		width: 100%;
+	}
+	.blog-details .blog-content{
+		padding-left: 15px;
+	}
+}
+/* End : Blog.css */
