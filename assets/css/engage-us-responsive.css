@@ -301,7 +301,7 @@ h2 {
         display: none;
     }
     .thinking-height2 {
-        height: 38.7vh;
+        height: 38.7vh !important;
     }
     .mob-busval-show{
         display: block !important;
@@ -596,7 +596,20 @@ h2 {
     .ot-margin .slick-list{
         margin: 0 25px;
     }
-    .carousel-div .slick-list
+    .ot-margin-top{
+        margin-top: 20px;
+    }
+    .tab-mobile .nav li {
+        color: #000;
+       display: table;
+    }
+    /*.tab-mobile .nav-tabs > li.active > a, .tab-mobile .nav-tabs > li.active > a:focus, 
+    .tab-mobile .nav-tabs > li.active > a:hover{
+
+    }*/
+    .ot-text-center{
+        font-size: 11px;
+    }
 }
 /*our thinking responsive ends*/
 @media screen and (max-width:419px){
