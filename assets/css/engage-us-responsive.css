@@ -26,10 +26,7 @@
         font-family:'proxima-regular';
         src: url(../font/ProximaNova-Regular.otf);
     }
- .es-haeding{
-        color: #474e5d;
-        font-family:"gotham-rounded-light";
-    }
+ 
 
     .es-line {
     background-color: #0ab4c5;
@@ -39,19 +36,15 @@
     position: absolute;
     transform: translateX(-50%);
     width: 25%;
-}
-    .es-heading-text{
-        color: #545454;
-        font-family:"gotham-rounded-light";
     }
     .es-carousel-padding {
     padding: 0px;
     position: relative;
-}
-/*.es-heading-caro-padd{
-    padding:0px;
-}*/
-.es-custom-btn {
+    }
+    /*.es-heading-caro-padd{
+        padding:0px;
+    }*/
+    .es-custom-btn {
     background-color: #0ab4c5;
     border: 1px solid #0ab4c5;
     color: #fff;
@@ -60,16 +53,17 @@
     padding: 8px 25px;
     text-transform: uppercase;
     transition: all 0.5s ease 0s;
-}
-.es-custom-btn:hover {
-    background-color: transparent;
-    border: 1px solid #0ab4c5;
-    color: #0ab4c5;
-}
-.know-more {
-    margin: 0 auto;
-    width: 146px;
-}
+    }
+    .es-custom-btn:hover {
+        background-color: transparent;
+        border: 1px solid #0ab4c5;
+        color: #0ab4c5;
+    }
+    .know-more {
+        margin: 0 auto;
+        width: 146px;
+        padding-top:20px; 
+    }
 @media screen and (min-width: 1199px) {
     .es-desktop-view {
        display: block;
@@ -79,6 +73,22 @@
    }
 }
 @media screen and (min-width:768px) and (max-width: 1199px) {
+    .esp-margin-left{
+        margin-left: 30px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .text-center.es-heading-text {
+        padding-bottom: 28px;
+    }
+    .container.tab-section {
+        padding-bottom: 15px;
+    }
+    .es-haeding{
+        color: #000;
+        font-family:"gotham-rounded-light";
+        font-size: 18px;
+    }
     .es-desktop-view {
        display: none;
     }
@@ -91,6 +101,8 @@
     .es-heading-text{
         font-size: 20px;
         line-height: 30px;
+        font-family: "gotham-rounded-light";
+        color: #343434;
     }
     .es-heading-caro-padd {
         padding: 0 53px;
@@ -143,10 +155,16 @@
     .thinking-height{
         background-color: #e8e8e8;
     }
+
 }
 
 @media screen and (min-width:320px) and (max-width: 767px){
-  .es-desktop-view {
+    .es-haeding{
+        color: #000;
+        font-family:"gotham-rounded-light";
+        font-size: 18px;
+    }
+    .es-desktop-view {
        display: none;
     }
     .es-tab-view{
@@ -158,9 +176,10 @@
     .es-heading-text{
         font-size: 12px;
         line-height: 16.5px;
+        font-family: "gotham-rounded-light";
     }
     .es-heading-caro-padd {
-    padding: 0 70px;
+    padding: 0 22px;
     }
     .es-carousel-padding {
     padding-bottom: 9px;
@@ -204,6 +223,15 @@
     }
     .carousel-div{
         width:100%;
+    }
+    .pvh-active {
+    border-bottom: 4px solid #ee2b7b;
+    }
+    .pvh-active {
+        border-bottom: 4px solid #ee2b7b;
+    }
+    .tab-val{
+        padding-bottom: 10px;
     }
 }
 
@@ -309,6 +337,9 @@ h2 {
     .bs-example{
         display: block !important;
     }
+    .thinking-height{
+         height: 38.7vh !important;
+    }
 
 }
 @media screen and (min-width:768px) and (max-width: 1199px){
@@ -324,9 +355,9 @@ h2 {
     .tab-mob-views{
         display: block;
     }
-    .container{
+    /*.container{
         width:100%;
-    }
+    }*/
     .tab-mobile{
         display: none;
     }
@@ -537,6 +568,7 @@ h2 {
         margin: 0 auto;
         width: 80px;
         cursor: pointer;
+        margin-top: 4%;
     }
     .mob-business-head{
         font-size: 12px;
@@ -552,6 +584,7 @@ h2 {
     }
     .mob-business-content{
         background-color: #ddd;
+        margin-bottom: 5px;
     }
     .mob-business-para{
         font-size: 10px;
@@ -581,6 +614,9 @@ h2 {
     #mob-nav.nav-tabs.mob-nav-tab {
     margin-top: 2%;
     }
+    .nav.nav-tabs.mob-nav-tab {
+        text-align: center;
+    }
     .li-width{
         width: 25%;
     }
@@ -589,9 +625,6 @@ h2 {
     }
     .li-width2{
         width: 22%;
-    }
-    .resolve-center{
-        text-align: right;
     }
     .ot-margin .slick-list{
         margin: 0 25px;
@@ -603,6 +636,10 @@ h2 {
         color: #000;
       /* display: block;*/
     }
+    .ot-nav-content{
+        color:#343434;
+        font-size: 10px;
+    }
     .tab-mobile .slick-slide img{
         display: inline;
     }
@@ -613,6 +650,25 @@ h2 {
     .ot-text-center{
         font-size: 11px;
     }
+    #accordion input:checked + label .img-class,#accordion input:checked + label .heading-class{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+    }
+    #accordion input:checked + label .img-class{
+        margin-top: 5px;
+    }
+    #accordion input:checked + label .heading-class{
+        margin-top: 10px;
+    }
+    #accordion input:checked + label label{
+        text-align: center;
+    }
+     #accordion input:checked + label img{
+        margin-left: 0px;
+     }
+
 }
 /*our thinking responsive ends*/
 @media screen and (max-width:419px){
