@@ -73,6 +73,12 @@
    .es-tab-mob-view{
     display: none;
    }
+  .es-mob-contact,.es-mob-close-pop,.es-popup-hr,.es-popup-hr,.es-mob-like,.es-mob-head{
+                    display: block;
+                }
+                .es-popup{
+                    display: none;
+                }
 }
 @media screen and (min-width:768px) and (max-width: 1199px) {
    .es-desktop-view .img-outer > img {
@@ -164,6 +170,24 @@
     .thinking-height{
         background-color: #e8e8e8;
     }
+    .es-mob-contact,.es-mob-close-pop,.es-popup-hr,.es-popup-hr,.es-mob-like,.es-mob-head{
+                    display: none;
+                }
+                .es-popup{
+                    display: block;
+                }
+                .es-ms-row-mar{
+                    margin-top: 0px;
+                }
+                .es-mob-talk-btn{
+                    padding-left: 0px;
+                }
+                .desktop-close-pop{
+                    position: static !important;
+                }
+                .es-contact-modal{
+                    display: table;
+                }
 
 }
 
@@ -233,6 +257,27 @@
     .tab-val{
         padding-bottom: 10px;
     }
+     /*for pop up start*/
+                .es-mob-contact,.es-mob-close-pop,.es-popup-hr,.es-popup-hr,.es-mob-like,.es-mob-head{
+                    display: none;
+                }
+                .es-popup{
+                    display: block;
+                }
+                .es-ms-row-mar{
+                    margin-top: 0px;
+                }
+                .es-mob-talk-btn{
+                    padding-left: 0px
+                }
+                .desktop-close-pop{
+                    position: static !important;
+                }
+                .es-contact-modal{
+                    display: table;
+                }
+                /*for pop up end*/
+    
 }
 
 
@@ -679,6 +724,9 @@ h2 {
      #accordion input:checked + label img{
         margin-left: 0px;
      }
+     .es-hm-talk-btn{
+                    padding-left: 0px;
+                }
 
 }
 /*our thinking responsive ends*/

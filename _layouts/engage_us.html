@@ -159,34 +159,36 @@
 
 </main>	
 <div id="hw-ribbon-our-thinking-footer">
-<!-- blue ribbon div-->
-    <div class=" log-clr-backgrnd container" id="hw-ribbon-our-thinking">
-        <div class="row">
-			<div class="col-lg-12 col-padding">
-				<span class="gotham-rounded-light ribon-font clr-white h-approch text-center">We <i class="fa fa-heart  hm-heart"></i> to be your technology partners</span>
-				<span class="upskill-filter hm-talk-btn">
-					<span><button class=" job-board-btn job-btn custom-btn heading-custom-btn hm-vertical hm-vertical1" data-toggle="modal" data-target="#start-project">TALK TO US</button></span>
-				</span>
-			</div>
-    	</div>
-   </div>
-</div>
-<!-- end of fixed tab-->
-<!-- Work-together popup -->
+		<!-- blue ribbon div-->
+		    <div class=" log-clr-backgrnd container" id="hw-ribbon-our-thinking">
+		        <div class="row">
+					<div class="col-lg-12 col-padding">
+						<span class="gotham-rounded-light ribon-font clr-white h-approch text-center">We <i class="fa fa-heart  hm-heart"></i> to be your technology partners</span>
+						<span class="upskill-filter hm-talk-btn es-mob-talk-btn">
+							<span><button class=" job-board-btn job-btn custom-btn heading-custom-btn hm-vertical hm-vertical1 our-heading-custom-btn" data-toggle="modal" data-target="#start-project">TALK TO US</button></span>
+						</span>
+					</div>
+		    	</div>
+		   </div>
+		</div>
 		<div id="start-project" class="modal fade">
-	        <div class="modal-dialog contact-modal">
+	        <div class="modal-dialog contact-modal es-contact-modal">
 	            <div class="modal-content">
 	            	
 	                <div class="container form-container">
-	                	<span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
-					<img class="close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
-	                	<h1 class="gotham-rounded-bold">Let's work together</h1>
-	                	<hr>
+	                	<span class="hm-contact es-mob-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
+					 <img class="close-pop es-mob-close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+	                	<h1 class="gotham-rounded-bold es-mob-head">Let's work together</h1>
+	                	<div class="es-popup">
+				                	<span class="gotham-rounded-bold es-pop-head">Let's Work Together
+				                	<img class="close-pop desktop-close-pop" data-dismiss="modal" src="/assets/img/engage-us-responsive/cross-img.png" alt="close"></span>
+				                </div>
+	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
 	         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
 							<div class="row ">
 									<div class="col-lg-6"> 
-										<div class="text-border">
+										<div class="text-border es-input-br-btm">
 											<div class="input-group">
 					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
 					      						
@@ -196,7 +198,7 @@
 									</div>
 								
 								<div class="col-lg-6"> 
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
 											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
@@ -204,9 +206,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="row ms-row-mar">
+							<div class="row ms-row-mar es-ms-row-mar">
 								<div class="col-lg-6"> 
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
 											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject">
@@ -226,7 +228,7 @@
 								</div>
 								
 								<div class="col-lg-6"> 
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
 											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
@@ -235,9 +237,9 @@
 								</div>
 							</div>
 
-							<div class="row ms-row-mar">
+							<div class="row ms-row-mar es-ms-row-mar">
 								<div class="col-lg-12">
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 									<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
 				      						
@@ -248,13 +250,13 @@
 							</div><!-- end of text-area row-->
 
 							<div class="attach-file">
-				      			<div class="col-lg-9">
+				      			<div class="col-lg-9 col-md-7 col-sm-7 col-xs-7">
 				      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
 				      				<br/><br/>
 				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
 				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
 				      			</div>
-				      			<div class="col-lg-3 submit-background">
+				      			<div class="col-lg-3 col-md-5 col-sm-5 col-xs-5 submit-background">
 				      			<button id="submit-btn" type="submit" class="btn">
               <br>
               <div class="submit-resume hr-display" style="margin: 0px auto;">
@@ -265,7 +267,7 @@
 				      		</div><!-- end of attach-file-->
 						</form> <!-- end of form -->
 						</div><!-- end of postresume -->
-					<div class="show-as-love"><!-- hm social icon-->
+					<div class="show-as-love es-mob-like"><!-- hm social icon-->
 					<div class="row">
 						<div class=" col-lg-offset-7 col-lg-5">
 							<div class="hm-shows-love">
@@ -293,10 +295,7 @@
 	    </div>
 	 </div>
 	</div>
-    <!-- End of work-together popup -->
-
-</div>
-
+<!-- tab ends -->
 
 
 
