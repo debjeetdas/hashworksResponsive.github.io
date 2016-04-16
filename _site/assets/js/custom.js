@@ -2122,7 +2122,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         arrows: true,
         responsive: [
           {
-            breakpoint: 767,
+            breakpoint: 768,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1
@@ -2143,11 +2143,11 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         var tabId = $(this).attr('id');
         var tabId_sub = tabId.substring(4,5);
         for(var j=1; j<=tab_count;j++){
-          $('#tab-'+j).removeClass('active');
-          $('#tabContent-'+j).removeClass('active');
+          $('#tab-'+j).removeClass('active pvh-active');
+          $('#tabContent-'+j).removeClass('active pvd-active');
         }
-        $('#tab-'+tabId_sub).addClass('active');
-        $('#tabContent-'+tabId_sub).addClass('active');
+        $('#tab-'+tabId_sub).addClass('active pvh-active');
+        $('#tabContent-'+tabId_sub).addClass('active pvd-active');
       });
     }
     setTimeout(function () {      
