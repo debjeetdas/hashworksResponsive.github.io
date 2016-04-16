@@ -65,6 +65,7 @@
         margin: 0 auto;
         width: 146px;
         padding-top:20px; 
+        padding-bottom: 20px;
     }
 @media screen and (min-width: 1199px) {
     .es-desktop-view {
@@ -341,7 +342,7 @@ h2 {
     font-family:"gotham-rounded-light";
 }
 #accordion article p {
-    padding: 2em;
+    padding: 10px 8%;
     font-family:"gotham-rounded-light";
     font-size:12px;
     text-align: justify;
@@ -386,6 +387,10 @@ h2 {
     /*.our-thinking-responsive{
         display: none;
     }*/
+    .thinking-height
+    {
+        height: 25.7vh !important;
+    }
     .tab-view{
         display: block;
     }

@@ -1,9 +1,6 @@
 var which_one_clicked1 = 0;
 if($(window).width() <= 1199)
 {
-    $(".thinking-height").addClass("col-md-6 col-sm-6 col-xs-6");
-    $(".thinking-height").addClass("col-md-6 col-sm-6 col-xs-6");
-
   $("#div-top-left").click(function(){
     if(which_one_clicked1 == 0){
       which_one_clicked1=1;
