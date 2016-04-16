@@ -19,6 +19,7 @@
 .collo-talent1 {
     display: none;
 }
+
 @media screen and (max-width: 1199px) {
     .cw-desk {
         display: block;
@@ -46,9 +47,9 @@
     .carousel-padding {
         padding: 0 0 24px;
     }
-    .container {
+    /*.container {
         width: 100%;
-    }
+    }*/
     .c-flex-1 {
         width: 33%;
     }
@@ -154,6 +155,12 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .cw-desk {
+        display: none;
+    }
+    .cw-mob {
+        display: block;
+    }
     #cw-responsive .gotham-book.input_file-upload.collaborative-input_file-upload {
         display: none;
     }

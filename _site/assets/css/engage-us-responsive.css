@@ -334,9 +334,6 @@ h2 {
     .mob-busval-show{
         display: block !important;
     }
-    .bs-example{
-        display: block !important;
-    }
     .thinking-height{
          height: 38.7vh !important;
     }
@@ -474,9 +471,6 @@ h2 {
         font-size: 14px;
     }
     .mob-busval-show{
-        display: block !important;
-    }
-    .bs-example{
         display: block !important;
     }
 }
