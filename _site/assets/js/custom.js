@@ -2174,6 +2174,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('.business-show').show();
         $('.js-class1').addClass('active');
          $('#home').addClass('active in');
+         $('.triangle-up').show();
         $('.mobile-business-show').hide();
         $('.mob-busval-show').hide();
         $('.bs-example').hide();
@@ -2182,6 +2183,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('.business-show').show();
         $('.js-class2').addClass('active');
          $('#menu1').addClass('active in');
+         $('.triangle-up1').show();
         $('.mobile-business-show').hide();
         $('.mob-busval-show').hide();
         $('.bs-example').hide();
@@ -2190,6 +2192,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('.business-show').show();
         $('.js-class3').addClass('active');
          $('#menu2').addClass('active in');
+         $('.triangle-up2').show();
         $('.mobile-business-show').hide();
         $('.mob-busval-show').hide();
         $('.bs-example').hide();
@@ -2198,10 +2201,37 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('.business-show').show();
         $('.js-class4').addClass('active');
          $('#menu3').addClass('active in');
+          $('.triangle-up3').show();
         $('.mobile-business-show').hide();
         $('.mob-busval-show').hide();
         $('.bs-example').hide();
      });
-    
+     $('.js-class1').on('click',function(){
+      $('.triangle-up').show();
+      $('.triangle-up2').hide();
+      $('.triangle-up3').hide();
+      $('.triangle-up1').hide();
+     });
+
+    $('.js-class2').on('click',function(){
+      $('.triangle-up1').show();
+      $('.triangle-up2').hide();
+      $('.triangle-up3').hide();
+      $('.triangle-up').hide();
+     });
+
+    $('.js-class3').on('click',function(){
+      $('.triangle-up2').show();
+      $('.triangle-up1').hide();
+      $('.triangle-up3').hide();
+      $('.triangle-up').hide();
+     });
+
+    $('.js-class4').on('click',function(){
+      $('.triangle-up3').show();
+      $('.triangle-up2').hide();
+      $('.triangle-up1').hide();
+      $('.triangle-up').hide();
+     });
 
 });

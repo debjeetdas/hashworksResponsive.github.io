@@ -450,6 +450,24 @@ h2 {
     }
 }
 @media screen and (min-width:320px) and (max-width: 767px){
+    .triangle-up,.triangle-up1,.triangle-up2,.triangle-up3 {
+        border-bottom: 10px solid #ddd;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        height: 0;
+        width: 0;
+        margin-left: 9%;
+        display: none;
+    }
+    .triangle-up1{
+        margin-left: 35%;
+    }
+    .triangle-up2{
+        margin-left: 62%;
+    }
+    .triangle-up3{
+        margin-left: 88%;
+    }
     .our-thinking-responsive-ribbon{
         display: none;
     }
@@ -543,7 +561,8 @@ h2 {
         color: #ee2b7b;
         font-family:"gotham-rounded-light"; 
         padding-left: 3%;
-        padding-top: 3%
+        padding-top: 3%;
+        margin-top:0;
     }
     .mob-we-resolve{
         font-size: 11px;
