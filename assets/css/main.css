@@ -908,7 +908,7 @@ html {
 			padding: 0 30px;
 		}
 		.sub-width {
-			width: 112% !important;
+			width: calc(100% + 59px) !important;
     		margin-left: -59px;
     		padding-left: 52px;
 		}
