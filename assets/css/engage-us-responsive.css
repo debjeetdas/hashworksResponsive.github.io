@@ -75,11 +75,11 @@
     display: none;
    }
   .es-mob-contact,.es-mob-close-pop,.es-popup-hr,.es-popup-hr,.es-mob-like,.es-mob-head{
-                    display: block;
-                }
-                .es-popup{
-                    display: none;
-                }
+            display: block;
+        }
+        .es-popup{
+            display: none;
+        }
 }
 @media screen and (min-width:768px) and (max-width: 1199px) {
    .es-desktop-view .img-outer > img {
@@ -122,6 +122,10 @@
     }
     .es-heading-caro-padd {
         padding: 0 53px;
+    }
+    .es-engage-cont{
+        margin-right: 0px;
+        margin-left: 0px;
     }
     .es-section{
         display: none;
@@ -167,6 +171,7 @@
     .our-heading-custom-btn {
         font-size: 12px;
         padding: 6px;
+        margin-right: 0px;
     }
     .thinking-height{
         background-color: #e8e8e8;
@@ -356,10 +361,13 @@ h2 {
 
 /*our thinking responsive starts*/
 @media screen and (min-width: 1199px) {
-   .our-thinking-responsive{
+    .our-thinking-responsive .nav li{
+       color: #5f5f5f; 
+    }
+    .our-thinking-responsive{
         display: block;
-   }
-   .tab-mob-views{
+    }
+    .tab-mob-views{
         display: none;
     }
     .tab-mobile{
@@ -387,9 +395,12 @@ h2 {
     /*.our-thinking-responsive{
         display: none;
     }*/
-    .thinking-height
+    .our-thinking-responsive .nav li{
+       color: #5f5f5f; 
+    }
+    .#div-bottom-left,.div-top-left,.div-top-right,.div-bottom-right
     {
-        height: 25.7vh !important;
+        height: 38.7vh !important;
     }
     .tab-view{
         display: block;
@@ -442,7 +453,7 @@ h2 {
     transform: rotate(180deg);
 }
 #div-top-left {
-    height: 25.7vh;
+    height: 38.7vh;
     left: 0;
     overflow: hidden;
     padding-left: 0;
@@ -454,7 +465,7 @@ h2 {
 }
 
 #div-top-right {
-    height: 25.7vh;
+    height: 38.7vh;
     overflow: hidden;
     padding-left: 0;
     padding-right: 0;
@@ -466,7 +477,7 @@ h2 {
 }
 #div-bottom-left {
     bottom: 0;
-    height: 25.7vh;
+    height: 38.7vh;
     left: 0;
     overflow: hidden;
     padding-left: 0;
@@ -478,7 +489,7 @@ h2 {
 
 #div-bottom-right {
     bottom: 0;
-    height: 25.7vh;
+    height: 38.7vh;
     overflow: hidden;
     padding-left: 0;
     padding-right: 0;
@@ -491,7 +502,7 @@ h2 {
         z-index: 10;
     }
     .thinking-height2 {
-        height: 25.7vh;
+        height: 38.7vh;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -560,6 +571,7 @@ h2 {
         border: 1px solid #f9d602;
         color: #474e5d;
         font-family: "gotham-rounded-bold";
+        margin-right: 0px;
     }
     .ribon-font {
     font-size: 12px;
@@ -746,7 +758,7 @@ h2 {
     .nav.nav-tabs.p-flex {
         text-align: center;
     }
-    @media screen and (min-width:992px) and (max-width: 1199px){
+    @media screen and (min-width:768px) and (max-width: 1199px){
     .es-desktop-view .upskill-img{
         max-width: 50% !important;
         float: right;

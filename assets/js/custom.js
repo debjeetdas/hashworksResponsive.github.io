@@ -2159,6 +2159,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
     },1000);
     /* end : Mobile code */
     $('.mob-business-value').on('click',function(){
+        $('.business-show').removeClass('in');
         $('.business-show').hide();
         $('.mobile-business-show').show();
         $('#mob-nav li').removeClass('active');
@@ -2175,6 +2176,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
      });
      
      $('.bg-we-resolve').on('click',function(){
+        $('.business-show').addClass('in');
         $('.business-show').show();
         $('.js-class1').addClass('active');
          $('#home').addClass('active in');
@@ -2184,6 +2186,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('.bs-example').hide();
      });
      $('.bg-we-practice').on('click',function(){
+        $('.business-show').addClass('in');
         $('.business-show').show();
         $('.js-class2').addClass('active');
          $('#menu1').addClass('active in');
@@ -2193,6 +2196,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('.bs-example').hide();
      });
      $('.bg-we-acc').on('click',function(){
+        $('.business-show').addClass('in');
         $('.business-show').show();
         $('.js-class3').addClass('active');
          $('#menu2').addClass('active in');
@@ -2202,6 +2206,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('.bs-example').hide();
      });
      $('.bg-we-partner').on('click',function(){
+        $('.business-show').addClass('in');
         $('.business-show').show();
         $('.js-class4').addClass('active');
          $('#menu3').addClass('active in');
@@ -2211,7 +2216,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('.bs-example').hide();
      });
      $('.js-class1').on('click',function(){
-      $('.triangle-up').show();
+      $('.triangle-up').addClass('in');
       $('.triangle-up2').hide();
       $('.triangle-up3').hide();
       $('.triangle-up1').hide();
@@ -2236,6 +2241,21 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
       $('.triangle-up2').hide();
       $('.triangle-up1').hide();
       $('.triangle-up').hide();
+     });
+     $('.es-label-section-1').on('click',function(){
+        $('#check-1').attr('checked', true);
+        $('#check-2').attr('checked', false);
+        $('#check-3').attr('checked', false);
+     });
+      $('.es-label-section-2').on('click',function(){
+        $('#check-1').attr('checked', false);
+        $('#check-2').attr('checked', true);
+        $('#check-3').attr('checked', false);
+     });
+       $('.es-label-section-3').on('click',function(){
+        $('#check-1').attr('checked', false);
+        $('#check-2').attr('checked', false);
+        $('#check-3').attr('checked', true);
      });
 
 });
