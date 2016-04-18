@@ -2078,7 +2078,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         arrows: true,
         responsive: [
           {
-            breakpoint: 1199,
+            breakpoint: 1920,
             settings: {
               slidesToShow: 4,
               slidesToScroll: 1
@@ -2151,11 +2151,11 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
       });
     }
     setTimeout(function () {      
-    var heights=$(".pf-mob .col-20").map(function (){
+    var heights=$(".resp-pf .col-20").map(function (){
                            return $(this).height();
                          }).get(),
       maxHeight_mob = Math.max.apply(null, heights);
-      $('.pf-mob .col-20 .hw-work-cont').css({height:maxHeight_mob+'px'});
+      $('.resp-pf .col-20 .hw-work-cont').css({height:maxHeight_mob+'px'});
     },1000);
     /* end : Mobile code */
     $('.mob-business-value').on('click',function(){

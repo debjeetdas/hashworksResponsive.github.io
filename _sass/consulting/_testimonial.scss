@@ -95,7 +95,6 @@ border-radius: 5px;
         display: none;
     }
 }
-@media screen and (max-width: 1199px){
     .pf-desktop{
         display: none;
     }
@@ -162,7 +161,7 @@ border-radius: 5px;
     }
     .pvd-header{
         font-size: 20px;
-        font-family: "gotham-rounded-light";
+        margin-top:0;
     }
     .pvd-data{
         border-left: 4px solid #ee2b7b;
@@ -171,7 +170,6 @@ border-radius: 5px;
         padding-left: 30px;
         text-align: justify;
     }
-}
 @media screen and (max-width:767px){
     .pvh-title{
         font-size:12px;
@@ -210,3 +208,19 @@ border-radius: 5px;
 }
 
 /* END : Portfolio mobile view */
+
+@media screen and (min-width:1200px){
+    .pvh-title,.pvd-data{ 
+        font:1rem/1.4 "gotham-rounded-light";
+    }
+    .pvh-title{
+        color: #5f5f5f;
+    }
+    .pvd-data{
+        color: #7e7e7e;
+    }
+    .pvd-header{
+        color: #545454;
+        font-size: 1.125rem;
+    }
+}
