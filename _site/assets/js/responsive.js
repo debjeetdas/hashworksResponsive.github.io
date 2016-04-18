@@ -1,6 +1,5 @@
 var which_one_clicked1 = 0;
-if($(window).width() <= 1199)
-{
+
   $("#div-top-left").click(function(){
     if(which_one_clicked1 == 0){
       which_one_clicked1=1;
@@ -112,10 +111,10 @@ if($(window).width() <= 1199)
       
         setTimeout(function(){$("#hw-ribbon-our-thinking-footer").css("display","block");}, 1000);
       $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"29%"},844);
-      $("#div-bottom-right").animate({'width' : '50%','height' : '38.7vh'},844);       
-      $("#div-bottom-left").animate({'width' : '50%','height' : '38.7vh'},844); 
-      $("#div-top-right").animate({'width' : '50%','height' : '38.7vh'},844); 
-      $("#div-top-left").animate({'width' : '50%','height' : '38.7vh'},844); 
+      $("#div-bottom-right").animate({'width' : '50%','height' : '325px'},844);       
+      $("#div-bottom-left").animate({'width' : '50%','height' : '325px'},844); 
+      $("#div-top-right").animate({'width' : '50%','height' : '325px'},844); 
+      $("#div-top-left").animate({'width' : '50%','height' : '325px'},844); 
     });
   
    $("li.c-flex").click(function(){
@@ -152,14 +151,13 @@ if($(window).width() <= 1199)
       
       $("#hw-ribbon-our-thinking-footer").css("display","block");
       $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"29%"},0);
-      $("#div-bottom-right").animate({'width' : '50%','height' : '38.7vh'},0);       
-      $("#div-bottom-left").animate({'width' : '50%','height' : '38.7vh'},0); 
-      $("#div-top-right").animate({'width' : '50%','height' : '38.7vh'},0); 
-      $("#div-top-left").animate({'width' : '50%','height' : '38.7vh'},0); 
+      $("#div-bottom-right").animate({'width' : '50%','height' : '325px'},0);       
+      $("#div-bottom-left").animate({'width' : '50%','height' : '325px'},0); 
+      $("#div-top-right").animate({'width' : '50%','height' : '325px'},0); 
+      $("#div-top-left").animate({'width' : '50%','height' : '325px'},0); 
     });
 
 
 
 
 // responsive ends
-} 

@@ -26,10 +26,17 @@
         font-family:'proxima-regular';
         src: url(../font/ProximaNova-Regular.otf);
     }
- .es-tab-mob-view{
-    display: none;
- }
-
+    .es-tab-mob-view{
+        display: none;
+    }
+    #div-top-left,#div-bottom-right,#div-bottom-left,#div-top-right{
+        min-height: 325px !important;
+    }
+    .thinking-height2{
+        min-height: 325px;
+        max-height: 325px;
+    }
+     
     .es-line {
     background-color: #0ab4c5;
     bottom: 0;
@@ -379,15 +386,13 @@ h2 {
     .mobile-ribbon{
         display: none;
     }
-    .thinking-height2 {
-        height: 38.7vh !important;
-    }
     .mob-busval-show{
         display: block !important;
     }
-    .thinking-height{
-         height: 38.7vh !important;
-    }
+    /*.es-desktop-view .img-outer > img {
+        max-width: 100%;
+        width: 100%;
+    }*/
 
 }
 
@@ -398,10 +403,10 @@ h2 {
     .our-thinking-responsive .nav li{
        color: #5f5f5f; 
     }
-    .#div-bottom-left,.div-top-left,.div-top-right,.div-bottom-right
+   /* .#div-bottom-left,.div-top-left,.div-top-right,.div-bottom-right
     {
         height: 38.7vh !important;
-    }
+    }*/
     .tab-view{
         display: block;
     }
@@ -453,7 +458,7 @@ h2 {
     transform: rotate(180deg);
 }
 #div-top-left {
-    height: 38.7vh;
+
     left: 0;
     overflow: hidden;
     padding-left: 0;
@@ -465,7 +470,7 @@ h2 {
 }
 
 #div-top-right {
-    height: 38.7vh;
+
     overflow: hidden;
     padding-left: 0;
     padding-right: 0;
@@ -477,7 +482,7 @@ h2 {
 }
 #div-bottom-left {
     bottom: 0;
-    height: 38.7vh;
+
     left: 0;
     overflow: hidden;
     padding-left: 0;
@@ -489,7 +494,7 @@ h2 {
 
 #div-bottom-right {
     bottom: 0;
-    height: 38.7vh;
+
     overflow: hidden;
     padding-left: 0;
     padding-right: 0;
@@ -502,7 +507,6 @@ h2 {
         z-index: 10;
     }
     .thinking-height2 {
-        height: 38.7vh;
         margin-left: 0px;
         margin-right: 0px;
     }
