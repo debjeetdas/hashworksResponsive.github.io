@@ -1,4 +1,8 @@
 $(document).ready(function(){
+// if ($(window).width() > 767 ) {
+//   $('.carousel-div').slick('unslick');
+//    });
+
 $(document.body).on('click', '.dropdown-menu li', function(event) {
       var $target = $(event.currentTarget);
 
@@ -208,4 +212,5 @@ $('.bootcamp-dropdown-menu').click(function(e){
  
 /*end filtering in bootcamp*/ 
  });
+
        

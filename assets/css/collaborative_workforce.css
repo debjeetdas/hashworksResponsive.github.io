@@ -14,10 +14,10 @@
     display: none;
 }
 .collo-talent {
-    display: block;
+    display: none;
 }
 .collo-talent1 {
-    display: none;
+    display: block;
 }
 .collobo-hw-main-heading{
         font-size: 14px;

@@ -2114,6 +2114,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('#pvd-'+pvhId_sub).addClass('pvd-active');
       });
     }
+    var maxWidth = 768
     $('.carousel-div').slick({
         dots: false,
         infinite: false,
@@ -2122,6 +2123,10 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         adaptiveHeight: true,
         arrows: true,
         responsive: [
+        {
+      breakpoint: 769,
+      settings: "unslick"
+       },
           {
             breakpoint: 768,
             settings: {
@@ -2138,6 +2143,12 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
           }
         ] 
     });
+    $(window).on('resize', function(){
+        var width = $(window).width();
+        if(width < maxWidth) {
+          runSlick();
+        }
+      });
     var tab_count = $('.tab-val').length;
     for(var i=1; i<=tab_count; i++){
       $('#tab-'+i).on('click',function(){

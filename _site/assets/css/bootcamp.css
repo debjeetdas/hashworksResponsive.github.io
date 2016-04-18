@@ -1,3 +1,21 @@
+.bc-mob {
+    display: none;
+  }
+   .bootcamp-ribbon-div{
+    margin: 0 auto;
+    width: 500px;
+     padding: 10px 0;
+  }
+  .bc-desk .gotham-rounded-light.hw-main-heading.clr-white.h-approch {
+    text-align: initial;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.bc-desk .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
+  font-family: "gotham-rounded-book";
+    font-size: 12px;
+     padding: 6px 10px;
+}
 @media screen and (max-width: 1199px) {
   .bc-desk div#bootcamp-filter-total {
     padding-top: 0;
@@ -17,18 +35,10 @@
     padding-top: 0px;
     margin-bottom: 25px;
   }
-  .bc-desk {
-    display: block;
-  }
 
   .hw-tab-heading {
     padding-top: 0;
   }
-
-  .bc-mob {
-    display: none;
-  }
-
   .bootcamp-text-center {
     text-align: center;
   }
@@ -196,10 +206,41 @@
 }
 
 @media screen and (max-width: 767px) {
- 
-  .bc-desk {
+  .bootcamp-ribbon-div{
+    width: 350px;
+  }
+  .bc-desk .gotham-rounded-light.hw-main-heading.clr-white.h-approch {
+    font-size: 12px;
+}
+.bc-desk .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
+    font-size: 12px;
+}
+  .bc-desk .hw-font-heading {
+    font-size: 18px !important;
+    margin-top: 20px;
+}
+  .container.bc-mob {
+    margin-top: 14px;
+}
+  .bootcamp-devops-img > img {
+    margin-left: 10px;
+}
+  .bc-desk .hw-upskill-cont svg {
     display: none;
   }
+  .hw-upskill-cont {
+    border-left: 5px solid #0ab4c5;
+    border-bottom: none;
+}
+  .hw-upskilling-details h2 {
+    border-left: 5px solid #0ab4c5;
+    background: #ededed none repeat scroll 0 0;
+    color: #000;
+    padding: 18px 0 4px;
+  }
+ .bootcamp-filter-contents{
+  display: none;
+ }
   .bc-mob{
   	display: block;
   }
@@ -337,7 +378,7 @@
     font-weight: bold;
   }
 
-  .text-uppercase.bootcamp-hw-tab-heading.hw-tab-heading.bootcamp-text-center {
+  .bc-desk .bootcamp-hw-tab-heading {
     color: #ee2b7b;
     font-family: "gotham-rounded-light";
     font-size: 14px;
@@ -372,14 +413,10 @@
     padding-top: 15px;
   }
 }
+@media screen and (max-width: 420px) {
 
-
-
-@media screen and (min-width: 1200px){
-	.bc-mob{
-		display: none;
-	}
-	.bc-desk{
-		display: block;
-	}
+  .bc-desk .gotham-rounded-light.hw-main-heading.clr-white.h-approch {
+    font-size: 11px;
+    margin-right: 0;
+}
 }
