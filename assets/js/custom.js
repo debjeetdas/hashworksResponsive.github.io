@@ -25,7 +25,13 @@ $(document).ready(function(){
 
     /* google search button animation*/
     $("a.toggle.btn").click(function(){
-      $("div#credits").toggle().css({width:"40px"}).animate({width: "200px"},300).removeClass('hidden');
+      if(screen.width>767){        
+        $("div#credits").toggle().css({width:"40px"}).animate({width: "200px"},300).removeClass('hidden');
+      }
+      else{
+        $("div#credits").toggle().css({width:"40px"}).animate({width: "130px"},300).removeClass('hidden');
+      }
+      $('.srch-txt').toggleClass('srch-txt-hide');
     });
 
     
@@ -2014,30 +2020,34 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         });
         $(".hide-scroll").show();
     });
-    $('.hwmt #nav-icon1').on('click', function() {
-        $('.hwmt #toc').animate({
-            width: '140px',
-            right: 0
-        });
-    });
-    $('.hwmt #button1').on('click', function() {
-        $('.hwmt #toc').animate({
-            width: 0,
-            right: 0
-        });
-    });
-    $('.hw-others #nav-icon1').on('click', function() {
-        $('.hw-others #toc').animate({
-            width: '100%',
-            right: 0
-        });
-    });
-    $('.hw-others #button1').on('click', function() {
-        $('.hw-others #toc').animate({
-            width: 0,
-            right: 0
-        });
-    });
+    if(screen.width>767){
+      $('.hwmt #nav-icon1,.hw-others #nav-icon1').on('click', function() {
+          $('#toc').animate({
+              width: '300px',
+              right: 0
+          });
+      });
+      $('.hwmt #button1,.hw-others #button1').on('click', function() {
+          $('#toc').animate({
+              width: 0,
+              right: 0
+          });
+      });
+    }
+    else{
+      $('.hwmt #nav-icon1,.hw-others #nav-icon1').on('click', function() {
+          $('#toc').animate({
+              width: '210px',
+              right: 0
+          });
+      });
+      $('.hwmt #button1,.hw-others #button1').on('click', function() {
+          $('#toc').animate({
+              width: 0,
+              right: 0
+          });
+      });
+    }
     $('.single-item').slick({
         dots: true,
         infinite: true,

@@ -4008,6 +4008,74 @@ img#big-ipad {
 	nav #toc ul li a{
 		padding-left: 0;
 	}
+	.hw-menu-list{
+		border-bottom: 1px solid #fafafa;
+		margin-bottom: 25px;
+	}
+	nav#toc ul li a, nav #toc ul li a{
+		color: white;
+	    font: normal 18px/40px "gotham-rounded-light";
+	    text-decoration: none;
+	}
+	.hw-menu-list,.social-share-menu-list{
+		margin: 0 30px 0;
+	}
+	.menu-icon {
+	    margin-right: 30px;
+	}
+	.srch-txt{
+		padding-left: 30px;		
+	}
+	.srch-txt-hide{
+		display: none;
+		-webkit-transition: all .5s ease 0s;
+		-moz-transition: all .5s ease 0s;
+		-ms-transition: all .5s ease 0s;
+		-o-transition: all .5s ease 0s;
+		transition: all .5s ease 0s;
+	}
+	#google-search-div{
+		margin-top: 0 !important;
+	}
+	.srch-icon{
+		display: table-cell;
+	}
+	#credits{
+		float: left;
+		display: table-cell;
+	}
+	.hw-menu-list > li:last-child {
+	    padding-bottom: 20px !important;
+	}
+	.social-share-menu-list .social-icons{
+		color: #fafafa;
+		margin-right: 15px;
+	}
+	.social-share-menu-list {
+	    padding-left: 0;
+	    padding-top: 25px;
+	}
+	nav #toc ul li a {
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-top: 10px;
+	}
+}
+@media screen and (max-width: 767px){
+	nav#toc ul li a, nav #toc ul li a{
+		color: white;
+	    font: normal 16px/48px "gotham-rounded-light";
+	    text-decoration: none;
+	}
+	.hw-menu-list,.social-share-menu-list{
+		margin: 0 20px 0;
+	}
+	.srch-txt{
+		padding-left: 20px;
+	}
+	.menu-icon {
+	    margin-right: 20px;
+	}
 }
 /* End : header.css */
 
