@@ -3728,7 +3728,7 @@ img#big-ipad {
 	.img-outer > img {
 	    /*margin:29px 10px 10px;*/
 	    width: 100%;
-	    max-width: 100px;
+	    max-width: 200px;
 	}
 	.hw-works h3{
 		font-family: "gotham-rounded-light";
@@ -3875,11 +3875,11 @@ img#big-ipad {
 	.company-btm .hw-contact-no{
 		font-size: 20px;
 	}
-}
-@media screen and (max-width: 767px){
 	.clr-black{
 		display: none;
 	}
+}
+@media screen and (max-width: 767px){	
 	.company-value,.company-btm .hw-contact-no,.company-det {
 	    font-size: 12px;
 	}
@@ -4472,4 +4472,21 @@ img#big-ipad {
     	line-height: 18.17px;
     	margin-right: 15px;
 	}
+}
+.rbn-ftr-company{
+	visibility: hidden;
+}
+.about-us .rbn-ftr-company{
+	visibility: visible;
+}
+.about-us .rbn-ftr-others{
+	visibility: hidden;
+	display: none;
+}
+.about-us .our-heading-custom-btn{
+	margin-right: 0;
+	margin-left: 10px;
+}
+.about-us .rbn-ftr-company .our-heading-custom-btn{
+	margin-left: 10px;
 }
