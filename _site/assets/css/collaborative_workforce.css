@@ -19,6 +19,21 @@
 .collo-talent1 {
     display: none;
 }
+.collobo-hw-main-heading{
+        font-size: 14px;
+        text-align: initial;
+        margin-right: 50px;
+    }
+    .collobo-talk-to-us{
+        font-size: 11px;
+        padding: 4px 6px;
+        margin-right: 22px;
+    }
+    .collobo-footer-division {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 600px;
+}
 
 @media screen and (max-width: 1199px) {
     .cw-desk {
@@ -285,3 +300,22 @@
         height: 50px;
         left: 0;
     }
+    .collobo-hw-main-heading{
+        font-size: 8px;
+    }
+    .collobo-talk-to-us{
+        font-size: 7px; 
+        margin-right: 8px;
+    }
+    .collobo-c-flex{
+        justify-content: initial;
+        margin: 0 auto;
+        padding-right: 14px;
+    }
+    .collobo-c-flex1{
+        float: none;
+    }
+    .collobo-footer-division {
+    width: 300px;
+}
+}
