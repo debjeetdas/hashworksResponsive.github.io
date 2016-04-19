@@ -34,7 +34,15 @@
         padding: 10px 0;
         width: 600px;
 }
-
+#cw-responsive .c-flex.c-flex-1.tab-val {
+    display: inline-block;
+}
+#cw-responsive .carousel-div {
+    width: 100%;
+}
+#cw-responsive .c-flex.c-flex-1.tab-val {
+    height: 100%;
+}
 @media screen and (max-width: 1199px) {
     .cw-desk {
         display: block;

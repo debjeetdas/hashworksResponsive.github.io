@@ -99,16 +99,16 @@ $('.bootcamp-dropdown-list').click(function(e) {
  /*for filtering in bootcamp*/
 
 var no_of_total_bootcamp_item=0;
-$(".bc-mob .upskill-cont-filter").each(function(){
+$(".upskill-cont-filter").each(function(){
   no_of_total_bootcamp_item++;
       });
-$(".bc-mob .bootcamp-filter-total-no").text(no_of_total_bootcamp_item);
+$(".bootcamp-filter-total-no").text(no_of_total_bootcamp_item);
 
 function bootcamp_filter_function(){
-    $(".bc-mob .no_of_matched_case_item").remove();
+    $(".no_of_matched_case_item").remove();
     var no_of_matched_item=0;
-     if ($(".bc-mob .bootcamp-dataops-checkbox-1").prop('checked')==true){
-      $(".bc-mob .upskill-cont-filter").each(function(){
+     if ($(".bootcamp-dataops-checkbox-1").prop('checked')==true){
+      $(".upskill-cont-filter").each(function(){
         if($(this).children().children().first().text().toLowerCase().trim()=="dataops"){
           $(this).css({opacity: 0,display: 'block'}).animate({opacity:1},500);
           no_of_matched_item++;
@@ -118,15 +118,15 @@ function bootcamp_filter_function(){
       }
       else
       {
-        $(".bc-mob .upskill-cont-filter").each(function(){
+        $(".upskill-cont-filter").each(function(){
         if($(this).children().children().first().text().toLowerCase().trim()=="dataops"){
           $(this).css("display","none");
         }
       });
       }
 
-     if ($(".bc-mob .bootcamp-devops-checkbox-1").prop('checked')==true){
-      $(".bc-mob .upskill-cont-filter").each(function(){
+     if ($(".bootcamp-devops-checkbox-1").prop('checked')==true){
+      $(".upskill-cont-filter").each(function(){
         if($(this).children().children().first().text().toLowerCase().trim()=="devops"){
           $(this).css({opacity: 0,display: 'block'}).animate({opacity:1},500);
           no_of_matched_item++;
@@ -136,15 +136,15 @@ function bootcamp_filter_function(){
       }
       else
       {
-        $(".bc-mob .upskill-cont-filter").each(function(){
+        $(".upskill-cont-filter").each(function(){
         if($(this).children().children().first().text().toLowerCase().trim()=="devops"){
           $(this).css("display","none");
         }
       });
       }
 
-      if ($(".bc-mob .bootcamp-datascie-checkbox-1").prop('checked')==true){
-      $(".bc-mob .upskill-cont-filter").each(function(){
+      if ($(".bootcamp-datascie-checkbox-1").prop('checked')==true){
+      $(".upskill-cont-filter").each(function(){
         if($(this).children().children().first().text().toLowerCase().trim()=="data science"){
           $(this).css({opacity: 0,display: 'block'}).animate({opacity:1},500);
           no_of_matched_item++;
@@ -154,15 +154,15 @@ function bootcamp_filter_function(){
       }
       else
       {
-        $(".bc-mob .upskill-cont-filter").each(function(){
+        $(".upskill-cont-filter").each(function(){
         if($(this).children().children().first().text().toLowerCase().trim()=="data science"){
           $(this).css("display","none");
         }
       });
       }
 
-      if ($(".bc-mob .bootcamp-ui-ux-checkbox-1").prop('checked')==true){
-      $(".bc-mob .upskill-cont-filter").each(function(){
+      if ($(".bootcamp-ui-ux-checkbox-1").prop('checked')==true){
+      $(".upskill-cont-filter").each(function(){
         if($(this).children().children().first().text().toLowerCase().trim()=="ui"){
           $(this).css({opacity: 0,display: 'block'}).animate({opacity:1},500);
           no_of_matched_item++;
@@ -172,14 +172,14 @@ function bootcamp_filter_function(){
       }
       else
       {
-        $(".bc-mob .upskill-cont-filter").each(function(){
+        $(".upskill-cont-filter").each(function(){
         if($(this).children().children().first().text().toLowerCase().trim()=="ui"){
           $(this).css("display","none");
         }
       });
       }
-      if ($(".bc-mob .bootcamp-mobility-checkbox-1").prop('checked')==true){
-      $(".bc-mob .upskill-cont-filter").each(function(){
+      if ($(".bootcamp-mobility-checkbox-1").prop('checked')==true){
+      $(".upskill-cont-filter").each(function(){
         if($(this).children().children().first().text().toLowerCase().trim()=="mobility"){
           $(this).css({opacity: 0,display: 'block'}).animate({opacity:1},500);
           no_of_matched_item++;
@@ -189,19 +189,19 @@ function bootcamp_filter_function(){
       }
       else
       {
-        $(".bc-mob .upskill-cont-filter").each(function(){
+        $(".upskill-cont-filter").each(function(){
         if($(this).children().children().first().text().toLowerCase().trim()=="mobility"){
           $(this).css("display","none");
         }
       });
       }
       
-      $(".bc-mob .bootcamp-filter-total-no").text(no_of_matched_item+"/"+no_of_total_bootcamp_item);
+      $(".bootcamp-filter-total-no").text(no_of_matched_item+"/"+no_of_total_bootcamp_item);
       if(no_of_matched_item==0)
-      $(".bc-mob .hw-upskilling-details  ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#ee2b7b;margin-top:40px;margin-bottom:40px"><p>sorry, no match found</p></div>');
+      $(".hw-upskilling-details ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#ee2b7b;margin-top:40px;margin-bottom:40px"><p>sorry, no match found</p></div>');
 }
 
-  $(".bc-mob .bootcamp-mobility-checkbox-1,.bc-mob .bootcamp-client-checkbox-1,.bc-mob .bootcamp-dataops-checkbox-1,.bc-mob .bootcamp-devops-checkbox-1,.bc-mob .bootcamp-datascience-checkbox-1,.bc-mob .bootcamp-ui-ux-checkbox-1").click(function(){
+  $(".bootcamp-mobility-checkbox-1,.bootcamp-client-checkbox-1,.bootcamp-dataops-checkbox-1,.bootcamp-devops-checkbox-1,.bootcamp-datascience-checkbox-1, .bootcamp-ui-ux-checkbox-1").click(function(){
 bootcamp_filter_function();
 });
 

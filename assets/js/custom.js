@@ -1919,7 +1919,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('#pvd-'+pvhId_sub).addClass('pvd-active');
       });
     }
-    var maxWidth = 768
+    
     $('.carousel-div').slick({
         dots: false,
         infinite: false,
@@ -1928,10 +1928,6 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         adaptiveHeight: true,
         arrows: true,
         responsive: [
-        {
-      breakpoint: 769,
-      settings: "unslick"
-       },
           {
             breakpoint: 768,
             settings: {
@@ -1945,13 +1941,32 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
               slidesToShow: 2,
               slidesToScroll: 1
             }
-          }
+          },
+          {
+          breakpoint: 1400,
+      settings: "unslick"
+    }
         ] 
     });
+//     var width = $(window).width(); 
+// if (width> 767) {
+//     $('.carousel-div').unslick({
+//     dots: false,
+//         infinite: false,
+//         speed: 500,
+//         slidesToShow: 3,
+//         adaptiveHeight: true,
+//         arrows: false,
+//       });
+//   }
     $(window).on('resize', function(){
+      var $carousel = $('.carousel');
         var width = $(window).width();
-        if(width < maxWidth) {
-          runSlick();
+        if(width > 767) {
+           $carousel.slick('unslick');
+        }
+        else{
+          $carousel.slick();
         }
       });
     var tab_count = $('.tab-val').length;
