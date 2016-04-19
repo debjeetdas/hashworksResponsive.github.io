@@ -2185,85 +2185,43 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('.business-show').hide();
         $('.mobile-business-show').show();
         $('#mob-nav li').removeClass('active');
-        $('#home').removeClass('active in');
-        $('#menu1').removeClass('active in');
-        $('#menu2').removeClass('active in');
-        $('#menu3').removeClass('active in');
-        $('.triangle-up').hide();
+        $('#home1').removeClass('active in');
+        $('#home2').removeClass('active in');
+        $('#home3').removeClass('active in');
+        $('#home4').removeClass('active in');
         $('.triangle-up1').hide();
         $('.triangle-up2').hide();
         $('.triangle-up3').hide();
+        $('.triangle-up4').hide();
         $('.mob-busval-show').show();
         $('.bs-example').show();
      });
+
+        $('.text').on('click',function(){
+          var tabId1 = $(this).attr('id');
+          var tabId_sub1 = tabId1.substring(6,7);
+            $('.business-show').addClass('in');
+            $('.business-show').show();
+            $('#js-class'+tabId_sub1).addClass('active');
+            $('#home'+tabId_sub1).addClass('active in');
+            $('.triangle-up'+tabId_sub1).show();
+            $('.mobile-business-show').hide();
+            $('.mob-busval-show').hide();
+            $('.bs-example').hide();
+          });
+
+         var tab_count11 = $('.js-com-cls').length;
+          for(var i=1; i<=tab_count11; i++){
+          $('#js-class'+i).on('click',function(){
+          var tabId11 = $(this).attr('id');
+          var tabId_sub11 = tabId11.substring(8,9);
+          for(var j=1; j<=tab_count11;j++){
+         $('.triangle-up'+j).hide();
+          }
+          $('.triangle-up'+tabId_sub11).show();
+        });
+      }
      
-     $('.bg-we-resolve').on('click',function(){
-        $('.business-show').addClass('in');
-        $('.business-show').show();
-        $('.js-class1').addClass('active');
-         $('#home').addClass('active in');
-         $('.triangle-up').show();
-        $('.mobile-business-show').hide();
-        $('.mob-busval-show').hide();
-        $('.bs-example').hide();
-     });
-     $('.bg-we-practice').on('click',function(){
-        $('.business-show').addClass('in');
-        $('.business-show').show();
-        $('.js-class2').addClass('active');
-         $('#menu1').addClass('active in');
-         $('.triangle-up1').show();
-        $('.mobile-business-show').hide();
-        $('.mob-busval-show').hide();
-        $('.bs-example').hide();
-     });
-     $('.bg-we-acc').on('click',function(){
-        $('.business-show').addClass('in');
-        $('.business-show').show();
-        $('.js-class3').addClass('active');
-         $('#menu2').addClass('active in');
-         $('.triangle-up2').show();
-        $('.mobile-business-show').hide();
-        $('.mob-busval-show').hide();
-        $('.bs-example').hide();
-     });
-     $('.bg-we-partner').on('click',function(){
-        $('.business-show').addClass('in');
-        $('.business-show').show();
-        $('.js-class4').addClass('active');
-         $('#menu3').addClass('active in');
-          $('.triangle-up3').show();
-        $('.mobile-business-show').hide();
-        $('.mob-busval-show').hide();
-        $('.bs-example').hide();
-     });
-     $('.js-class1').on('click',function(){
-      $('.triangle-up').show();
-      $('.triangle-up2').hide();
-      $('.triangle-up3').hide();
-      $('.triangle-up1').hide();
-     });
-
-    $('.js-class2').on('click',function(){
-      $('.triangle-up1').show();
-      $('.triangle-up2').hide();
-      $('.triangle-up3').hide();
-      $('.triangle-up').hide();
-     });
-
-    $('.js-class3').on('click',function(){
-      $('.triangle-up2').show();
-      $('.triangle-up1').hide();
-      $('.triangle-up3').hide();
-      $('.triangle-up').hide();
-     });
-
-    $('.js-class4').on('click',function(){
-      $('.triangle-up3').show();
-      $('.triangle-up2').hide();
-      $('.triangle-up1').hide();
-      $('.triangle-up').hide();
-     });
      $('.es-label-section-1').on('click',function(){
         $('#check-1').attr('checked', true);
         $('#check-2').attr('checked', false);
