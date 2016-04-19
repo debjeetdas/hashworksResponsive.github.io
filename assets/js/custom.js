@@ -1959,16 +1959,16 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
 //         arrows: false,
 //       });
 //   }
-    $(window).on('resize', function(){
-      var $carousel = $('.carousel');
-        var width = $(window).width();
-        if(width > 767) {
-           $carousel.slick('unslick');
-        }
-        else{
-          $carousel.slick();
-        }
-      });
+    // $(window).on('resize', function(){
+    //   var $carousel = $('.carousel-div');
+    //     var width = $(window).width();
+    //     if(width > 767) {
+    //        $carousel.slick('unslick');
+    //     }
+    //     else{
+    //       $carousel.slick();
+    //     }
+    //   });
     var tab_count = $('.tab-val').length;
     for(var i=1; i<=tab_count; i++){
       $('#tab-'+i).on('click',function(){
