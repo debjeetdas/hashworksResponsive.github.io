@@ -3932,7 +3932,7 @@ img#big-ipad {
 	    display: table;
 	    width: 100%;
 	}
-	.nav-desktop{
+	.nav-desktop,.logo-desktop{
 		display: none;
 	}
 	.nav-mob .logo{
@@ -4064,7 +4064,7 @@ img#big-ipad {
 @media screen and (max-width: 767px){
 	nav#toc ul li a, nav #toc ul li a{
 		color: white;
-	    font: normal 16px/48px "gotham-rounded-light";
+	    font: normal 14px/30px "gotham-rounded-light";
 	    text-decoration: none;
 	}
 	.hw-menu-list,.social-share-menu-list{
@@ -4075,6 +4075,9 @@ img#big-ipad {
 	}
 	.menu-icon {
 	    margin-right: 20px;
+	}
+	.srch-content-menu .toggle.btn {
+	    padding-top: 15px !important;
 	}
 }
 /* End : header.css */

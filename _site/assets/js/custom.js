@@ -1879,7 +1879,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         dots: false,
         infinite: false,
         speed: 300,
-        slidesToShow: 1,
+        slidesToShow: 4,
         adaptiveHeight: true,
         arrows: true,
         responsive: [
@@ -1924,51 +1924,24 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         adaptiveHeight: true,
         arrows: true,
         responsive: [
           {
-            breakpoint: 768,
+          breakpoint: 768,
+            settings: "unslick"
+          },
+          {
+            breakpoint: 767,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1
             }
-          },
-          {
-            breakpoint: 460,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-          breakpoint: 1400,
-      settings: "unslick"
-    }
+          }
         ] 
     });
-//     var width = $(window).width(); 
-// if (width> 767) {
-//     $('.carousel-div').unslick({
-//     dots: false,
-//         infinite: false,
-//         speed: 500,
-//         slidesToShow: 3,
-//         adaptiveHeight: true,
-//         arrows: false,
-//       });
-//   }
-    // $(window).on('resize', function(){
-    //   var $carousel = $('.carousel-div');
-    //     var width = $(window).width();
-    //     if(width > 767) {
-    //        $carousel.slick('unslick');
-    //     }
-    //     else{
-    //       $carousel.slick();
-    //     }
-    //   });
     var tab_count = $('.tab-val').length;
     for(var i=1; i<=tab_count; i++){
       $('#tab-'+i).on('click',function(){
