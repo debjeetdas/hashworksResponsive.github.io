@@ -13,9 +13,6 @@
 .gotham-rounded-bok.hw-heading.collaborative-apply-heading.collaborative-apply-heading-1 {
     display: none;
 }
-.collo-talent {
-    display: none;
-}
 .collo-talent1 {
     display: block;
 }
@@ -178,6 +175,9 @@
     }
 }
 @media screen and (max-width: 767px) {
+    #cw-responsive .slick-prev.slick-arrow{
+        z-index: 1;
+    }
     .cw-desk {
         display: none;
     }
@@ -195,12 +195,6 @@
     }
     .slick-next {
         right: 0px;
-    }
-    .collo-talent {
-        display: none;
-    }
-    .collo-talent1 {
-        display: block;
     }
     .carousel-padding {
         padding: 0 0 15px;
