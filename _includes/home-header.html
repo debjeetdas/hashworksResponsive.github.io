@@ -1,102 +1,22 @@
 <body class="hw-home-body">
-
   {% if page.layout == "default" %}
-  <header class="hw-home">
-    {% else %}
+    <header class="hw-home">
+      {% else %}
     <header>
-  
-{% endif %}
-
-
-    <!-- logo -->
-                <div class="logo logo-desktop" id="log-fixed" >
-                  <a href="/"></a>
-                </div>
-              <!-- End of logo -->
-
-
-
-             <!--  <div class="triangle top slide"></div> -->
-<!-- <div class="triangle bottom slide"></div>
- -->
-
-
+  {% endif %}
+  <!-- logo -->
+  <div class="logo logo-desktop" id="log-fixed">
+    <a href="/"></a>
+  </div>
+  <!-- End of logo -->
   <!-- navigation-bar -->
-          <nav class="navbar navbar-default" style="display: none;">
-            <ul class="nav navbar-nav navbar-right">
-                  {% for item in site.data.nav.main-right %}
-                    <li class="gotham-rounded-light header-links">
-                      <a href="{{ item.url }}">{{ item.text }}</a>
-                    </li>
-                  {% endfor %}
-            </ul>
-                  
-             
-
-            
-          </nav>
-          {% if page.layout == "default" %}
-          <nav class="hwmt">
-          {% else %}
-            <!-- navigation-bar -->
-          <nav class="nav-mob">
-              
-          {% endif %}
-            <div class="logo logo-mob">
-              <a href="/"></a>
-            </div>
-            <div id="nav-icon1">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div id="toc" class="on menu-hide" style="right: 0px;">
-            <p id="button1">&#10006;</p>
-              <ul class="hw-menu-list">
-                    <!-- search bar-->
-                    <li class="srch-content-menu">
-                      <div id="credits" class=" hidden ">
-                        <div id="google-search-div">
-                          <gcse:search></gcse:search>
-                          <i class="fa fa-angle-right search-arrow"></i>
-                        </div>
-                      </div>
-                      <a href="#credits" class="toggle btn"><i class="fa fa-search"></i><span class="srch-txt">Search</span></a>
-                    </li>
-                    <!-- end  search bar-->  
-                    <li>
-                        <a href="/portfolio"><img class="menu-icon" src="../assets/img/portfolio_inactive.png" width="24px"/>Portfolio</a></li>
-                    <li>
-                        <a  href="/engage_us"><img class="menu-icon" src="../assets/img/portfolio_inactive.png" width="24px"/>Engage&nbspUs</a></li>
-                    <li class="pointer">
-                        <a href="javascript:void(0);"><img class="menu-icon" src="../assets/img/portfolio_inactive.png" width="24px"/>Case&nbspStudy</a></li>
-                    <li>
-                        <a href="/company"><img class="menu-icon" src="../assets/img/portfolio_inactive.png" width="24px"/>Company</a></li>
-                    <li>
-                        <a href="/blog"><img class="menu-icon" src="../assets/img/portfolio_inactive.png" width="24px"/>Blog</a></li>
-                  <li>
-                        <a href="/job_board"><img class="menu-icon" src="../assets/img/portfolio_inactive.png" width="24px"/>Job&nbspBoard</a></li>
-                </ul>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 social-share-menu-list">
-                  <a target="new" class="fa-stack hw-socialshare social-icons" href="https://www.facebook.com/hashworks/">
-                  <!-- <span > -->
-                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x"></i>
-                  <!-- </span> -->
-                  </a>
-                  <a target="new" class="fa-stack hw-socialshare social-icons" href="https://twitter.com/hashworksco">
-                  <!-- <span > -->
-                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x"></i>
-                  <!-- </span> -->
-                  </a>
-                  <a target="new" class="fa-stack hw-socialshare social-icons" href="https://www.linkedin.com/company/9228490">
-                  <!-- <span > -->
-                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x"></i>
-                  <!-- </span> -->
-                     </a>
-                </div>
-            </div>
-          </nav>
+  <nav class="navbar navbar-default" style="display: none;">
+    <ul class="nav navbar-nav navbar-right">
+      {% for item in site.data.nav.main-right %}
+        <li class="gotham-rounded-light header-links">
+          <a href="{{ item.url }}">{{ item.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
 </header>
