@@ -211,6 +211,35 @@ $('.bootcamp-dropdown-menu').click(function(e){
 });
  
 /*end filtering in bootcamp*/ 
+
+$(function(){
+  $(".job-word-wrap").each(function(i){
+    len=$(this).text().length;
+    if(len>200)
+    {
+      $(this).text($(this).text().substr(0,200));
+    }
+    $(this).text($(this).text().substr(0,len));
+  });       
+});
+
+
+$(function(){
+/*whitepapers Pagination*/
+var paginate = $.fn.paginate({//options here
+    perPage  : 4,//list items per page
+    pageId    : "paginationList", //pagination ul Id
+    pager    : "pager",//pager Id
+    leftImgSrc  : "/assets/img/pager-left.png",
+    rightImgSrc  : "/assets/img/pager-right.png",
+    leftImgActiveSrc : "/assets/img/pager-left-active.png",
+    rightImgActiveSrc : "/assets/img/pager-right-active.png",
+    getCurrentPage : function(currentPage){
+      $(".pageNo").html("Page "+currentPage);
+    }
+});
+
+});
  });
 
        
