@@ -562,6 +562,17 @@ h2 {
     .triangle-up4{
         margin-left: 88%;
     }
+    .mob-bus-content{
+        font-size: 16px;
+        font-family: "gotham-rounded-light";
+        color: #000;
+    }
+    #js-div1 > img,#js-div2 > img ,#js-div4 > img {
+        margin-right: 6%;
+    }
+    #js-div3 > img{
+        margin-right: 6%;
+    }
     .our-thinking-responsive-ribbon{
         display: none;
     }
