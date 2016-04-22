@@ -2014,7 +2014,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('.triangle-up3').hide();
         $('.triangle-up4').hide();
         $('.mob-busval-show').show();
-        $('.bs-example').show();
+        $('.js-bs-example').show();
      });
 
         $('.text').on('click',function(){
@@ -2027,7 +2027,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
             $('.triangle-up'+tabId_sub1).show();
             $('.mobile-business-show').hide();
             $('.mob-busval-show').hide();
-            $('.bs-example').hide();
+            $('.js-bs-example').hide();
           });
 
          var tab_count11 = $('.js-com-cls').length;
