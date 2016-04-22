@@ -36,6 +36,13 @@
     	font-size: 11px;
     	font-family: "gotham-rounded-light";
 	}
+	.jb-skill{
+		color: #000;
+		font-size: 11px;
+    	font-family: "gotham-rounded-light";
+    	line-height: 16.5px;
+    	margin-bottom: 22px;
+	}
 	.job-table-cell{
 		display: table-cell;
 	}

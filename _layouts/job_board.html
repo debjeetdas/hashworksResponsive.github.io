@@ -256,7 +256,7 @@
 
 <div class="jb-mob"> 
   <div>
-     <div class="jobs-tab-header">
+     <div class="jobs-tab-header" style="display:none">
     <h1 class="text-center gotham-rounded-bok heading hw-font-heading job-hw-font-heading"> Job for you </h1>
     <div class="carousel-padding job-carousel-padding"> 
         <div class="line job-line"></div>
@@ -265,22 +265,49 @@
   </div> 
 {% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}  
 {% for job in items %}
-  <div class="container job-container">
-  <ul class="table job-table">
-  <li><input type="radio" id="f-option" name="selector">
+  <div class="container job-container"  style="display:none">
+  <div>
+  <input type="radio" id="f-option" name="selector">
     <label for="f-option" class="job-title">{{job.job_title}}</label></li>
-  <li><div class="job-table">
+ <div class="job-table">
    <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-exp.png"></span><span class="job-table-cell">{{job.experience}}</span></div>
     <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-location.png"></span><span class="job-table-cell">{{job.location}}</span></div>
    <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-skill.png"></span><span class="job-table-cell"><p class="job-word-wrap">{{job.skills}}</p></span></div>
-  </div></li>
-  </ul>
+  </div>
+  </div>
 </div>
   {% endfor %}
+
+
+<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading devops-heading"> <img src="/assets/img/arrows.png" class="devopss-fa-arrow-left">
+<span>Jobs Description</span></h1>
+{% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}  
+{% for job in items %}
+  <div class="container job-container">
+<div>
+    <h1 class="job-title">{{job.job_title}}</h1>
+  <div class="job-table">
+   <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-exp.png"></span><span class="job-table-cell">{{job.experience}}</span></div>
+    <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-location.png"></span><span class="job-table-cell">{{job.location}}</span></div>
+   <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-skill.png"></span><span class="job-table-cell"><p class="job-word-wrap">{{job.skills}}</p></span></div>
+  </div>
+  </div>
+
+
+<div class="container">
+  <h1 class="job-title">Job Description</h1>
+  {% for  job_descr in job.job_description %}
+    <li class="jb-skill">{{job_descr}}</li>
+    {% endfor %}
+  <h1 class="job-title">Skills</h1>
+   {% for  job_skills in job.job_skills %}
+    <li class="jb-skill">{{job_skills}}</li>
+    {% endfor %}
 </div>
+</div>
+  {% endfor %}
 
-
-
+</div>
            <script>
 $(function(){
 /*whitepapers Pagination*/
