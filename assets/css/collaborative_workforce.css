@@ -1,9 +1,6 @@
 .talent .li-tab-mar {
     display: table;
 }
-.fa.fa-times.job-close.job-close-1 {
-    display: block;
-}
 .lets-work-heading {
     display: none;
 }
@@ -15,6 +12,12 @@
 }
 .collo-talent1 {
     display: block;
+}
+.fa.fa-times.job-close.job-close-1 {
+    display: none;
+}
+ .caret.collaborative-caret {
+    display: none;
 }
 .collobo-hw-main-heading{
         font-size: 14px;
@@ -173,6 +176,12 @@
         right: 2%;
         top: 47%;
     }
+    .fa.fa-times.job-close.job-close-1 {
+        display: block;
+    }
+    .caret.collaborative-caret {
+    display: block;
+}
 }
 @media screen and (max-width: 767px) {
     #cw-responsive .slick-prev.slick-arrow{
@@ -252,9 +261,6 @@
     .hw-engage-cont {
         margin: 20px 0 30px;
     }
-    .fa.fa-times.job-close.job-close-1 {
-        display: none;
-    }
     .lets-work-heading {
         display: block;
         color: #3f4041;
@@ -304,6 +310,7 @@
     }
     .collobo-hw-main-heading{
         font-size: 8px;
+        margin-right: 0 !important;
     }
     .collobo-talk-to-us{
         font-size: 7px; 

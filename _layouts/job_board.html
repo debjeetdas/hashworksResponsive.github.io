@@ -256,7 +256,7 @@
 
 <div class="jb-mob"> 
   <div>
-     <div class="jobs-tab-header" style="display:none">
+     <div class="jobs-tab-header">
     <h1 class="text-center gotham-rounded-bok heading hw-font-heading job-hw-font-heading"> Job for you </h1>
     <div class="carousel-padding job-carousel-padding"> 
         <div class="line job-line"></div>
@@ -265,9 +265,9 @@
   </div> 
 {% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}  
 {% for job in items %}
-  <div class="container job-container"  style="display:none">
-  <div>
-  <input type="radio" id="f-option" name="selector">
+  <div class="container job-container">
+  <div class="job-board-content">
+  <input type="radio" id="f-option" name="selector" class="f-option">
     <label for="f-option" class="job-title">{{job.job_title}}</label></li>
  <div class="job-table">
    <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-exp.png"></span><span class="job-table-cell">{{job.experience}}</span></div>
@@ -278,11 +278,11 @@
 </div>
   {% endfor %}
 
-
+<div class="job-detailed-content">
 <h1 class="text-center gotham-rounded-bok heading hw-carousel-heading devops-heading"> <img src="/assets/img/arrows.png" class="devopss-fa-arrow-left">
 <span>Jobs Description</span></h1>
 {% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}  
-{% for job in items %}
+{% for job in items limit:1 %}
   <div class="container job-container">
 <div>
     <h1 class="job-title">{{job.job_title}}</h1>
@@ -300,32 +300,16 @@
     <li class="jb-skill">{{job_descr}}</li>
     {% endfor %}
   <h1 class="job-title">Skills</h1>
-   {% for  job_skills in job.job_skills %}
+   {% for  job_skills in job.skills %}
     <li class="jb-skill">{{job_skills}}</li>
     {% endfor %}
+</div>
 </div>
 </div>
   {% endfor %}
 
 </div>
-           <script>
-$(function(){
-/*whitepapers Pagination*/
-var paginate = $.fn.paginate({//options here
-    perPage  : 4,//list items per page
-    pageId    : "paginationList", //pagination ul Id
-    pager    : "pager",//pager Id
-    // leftImgSrc  : "/assets/img/pager-left.png",
-    // rightImgSrc  : "/assets/img/pager-right.png",
-    // leftImgActiveSrc : "/assets/img/pager-left-active.png",
-    // rightImgActiveSrc : "/assets/img/pager-right-active.png",
-    getCurrentPage : function(currentPage){
-      $(".pageNo").html("Page "+currentPage);
-    }
-});
-
-});
- </script>
+        
 
 {% include footer.html %} 
 {% include html-footer.html %} 
