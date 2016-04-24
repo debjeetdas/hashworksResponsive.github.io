@@ -23,6 +23,7 @@
         font-size: 14px;
         text-align: initial;
         margin-right: 50px;
+        padding: 0;
     }
     .collobo-talk-to-us{
         font-size: 11px;
@@ -325,6 +326,9 @@
         float: none;
     }
     .collobo-footer-division {
-    width: 300px;
-}
+        width: 300px;
+    }
+    .fa.fa-times.job-close.job-close-1 {
+        display: none;
+    }
 }

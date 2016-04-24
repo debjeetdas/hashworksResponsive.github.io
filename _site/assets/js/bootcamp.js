@@ -223,23 +223,49 @@ $(function(){
   });       
 });
 
+$('.job-detailed-content').hide();
+var count = $('.f-option').length;
+    for(var i=1; i<=count; i++){
 
-// $(function(){
-// /*whitepapers Pagination*/
-// var paginate = $.fn.paginate({//options here
-//     perPage  : 4,//list items per page
-//     pageId    : "paginationList", //pagination ul Id
-//     pager    : "pager",//pager Id
-//     leftImgSrc  : "/assets/img/pager-left.png",
-//     rightImgSrc  : "/assets/img/pager-right.png",
-//     leftImgActiveSrc : "/assets/img/pager-left-active.png",
-//     rightImgActiveSrc : "/assets/img/pager-right-active.png",
-//     getCurrentPage : function(currentPage){
-//       $(".pageNo").html("Page "+currentPage);
-//     }
-// });
+ $('#jt-'+i).on('click',function(){
+  var id=$(this).attr('id');
+  var sub=id.substring(3,4);
+  for(var j=1; j<=count;j++){
+    $('#jd-'+j).hide();
+  }
+  if($(this).siblings('#f-option'+sub).prop('checked')===true) {
+    
+  $('#jd-'+sub).show();
+  $('.jobs-tab-header').hide();
+  $('.job-board-content').hide();
+  $('#pager').hide();
+  $('#form-map-div').hide();
+  $('.hw-started1').hide();
+  }
+ });
+ }
 
-// });
+ $(".job-devops-heading").click(function(){
+  $('.job-board-content').show();
+  $('.job-detailed-content').hide();
+  });
+
+$(function(){
+/*whitepapers Pagination*/
+var paginate = $.fn.paginate({//options here
+    perPage  : 4,//list items per page
+    pageId    : "paginationList", //pagination ul Id
+    pager    : "pager",//pager Id
+    leftImgSrc  : "/assets/img/pager-left.png",
+    rightImgSrc  : "/assets/img/pager-right.png",
+    leftImgActiveSrc : "/assets/img/pager-left-active.png",
+    rightImgActiveSrc : "/assets/img/pager-right-active.png",
+    getCurrentPage : function(currentPage){
+      $(".pageNo").html("Page "+currentPage);
+    }
+});
+
+});
  });
 
        

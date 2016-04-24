@@ -42,6 +42,7 @@
     	font-family: "gotham-rounded-light";
     	line-height: 16.5px;
     	margin-bottom: 22px;
+    	text-align: justify;
 	}
 	.job-table-cell{
 		display: table-cell;
@@ -66,10 +67,41 @@
     	margin-left: 31px;
     	margin-right: 15px;
 	}
-	.container.job-container > input {
-    	margin-top: 12px;
+	.pagination-list{
+		margin-top: 14px;
 	}
-
-
+	.jb-skill{
+		list-style-type: initial;
+		list-style-image: "/assets/img/job-board/job-li.png";
+	}
+	.job-tit{
+		margin-left: 0;
+	}
+	.job-table-cell > .job-img{
+		margin-left: 10px;
+	}
+	.job-word-wrap{
+		text-align: justify;
+	}
+	.apply-div{
+		text-align: center;
+		font-family: "gotham-rounded-book";
+		font-size: 12px;
+		background-color: #0ab4c5;
+		color: #fff;
+		padding-top: 10px;
+		padding-bottom: 10px
+	}
+	input[type='radio'] {
+  		-webkit-appearance:none;
+  		outline:none;
+  	}
+	input[type='radio']:before {
+  		content:'';
+  		display:block;   
+	}
+	input[type='radio']:checked:before {
+  		background:pink;
+	}
 
 }
