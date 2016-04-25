@@ -1930,7 +1930,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
           {
             breakpoint: 767,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 4,
               slidesToScroll: 1
             }
           },
