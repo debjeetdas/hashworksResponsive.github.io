@@ -1,6 +1,9 @@
  .devopss-fa-arrow-left{
  	display: none;
  }
+ .fa.fa-angle-right.devops-fa-angle-right {
+    display: none;
+}
 @media screen and (max-width: 1199px) {
 	.devops-heading{
 		font-size: 32px;

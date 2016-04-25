@@ -47,7 +47,7 @@
 	.job-table-cell{
 		display: table-cell;
 	}
-	input[type=radio]{
+/*	input[type=radio]{
     	border: 1px solid #aeaeae;
 	}
 	input[type="radio"]:checked + label span{
@@ -55,9 +55,8 @@
 	}
 	input[type=radio]:checked .check::before{
   		color: #ee2b7b;
-	}
+	}*/
 	.job-title {
-    	margin-left: 12px;
     	color: #343434;
     	font-size: 14px;
     	font-family: "gotham-rounded-book";
@@ -70,9 +69,9 @@
 	.pagination-list{
 		margin-top: 14px;
 	}
-	.jb-skill{
+	#jb-mob .jb-skill{
 		list-style-type: initial;
-		list-style-image: "/assets/img/job-board/job-li.png";
+		color: #343434;
 	}
 	.job-tit{
 		margin-left: 0;
@@ -83,25 +82,59 @@
 	.job-word-wrap{
 		text-align: justify;
 	}
+	.apply-full-div{
+		width: 100%;
+	}
 	.apply-div{
+		background-color: #0ab4c5;
 		text-align: center;
 		font-family: "gotham-rounded-book";
 		font-size: 12px;
-		background-color: #0ab4c5;
 		color: #fff;
 		padding-top: 10px;
-		padding-bottom: 10px
-	}
-	input[type='radio'] {
-  		-webkit-appearance:none;
-  		outline:none;
-  	}
-	input[type='radio']:before {
-  		content:'';
-  		display:block;   
-	}
-	input[type='radio']:checked:before {
-  		background:pink;
+		padding-bottom: 10px;
+		width: 100%;
+		border: none;
 	}
 
+	#jb-mob .pannel-job ul li {
+  		list-style: none;
+	}
+	#jb-mob .pannel-job ul  li:before {
+  		content: '\2022';
+		display: block;
+		position: relative;
+		max-width: 0;
+		max-height: 0;
+		left: -15px;
+		top: 0;
+		color: #0ab4c5;
+		font-size: 20px;
+	}
+	input[type=radio] {
+	    display:none;
+	}
+	input[type="radio"]:checked + label::before {
+    	background-color: #fff;
+    	border: 2px solid #acacac;
+	    color: #ee2b7b;
+	    content: "•";
+	    font-size: 38px;
+	    line-height: 14px;
+	    padding: 0;
+	    text-align: center;
+	    text-shadow: none;
+	}
+	input[type="radio"] + label::before {
+	    background-color: #fff;
+	    border: 2px solid #acacac;
+	    border-radius: 12px;
+	    box-shadow: none;
+	    content: "";
+	    display: inline-block;
+	    height: 20px;
+	    margin-right: 12px;
+	    vertical-align: middle;
+	    width: 21px;
+	}
 }
