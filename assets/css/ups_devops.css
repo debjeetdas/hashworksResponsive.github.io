@@ -101,6 +101,13 @@
 }
 }
 @media screen and (max-width: 767px) {
+#ups-devops .gotham-rounded-light.hw-main-heading.clr-white.h-approch{
+    font-size: 11px;
+}
+#ups-devops .text-uppercase.custom-btn.heading-custom-btn.talk-to-us{
+    font-size: 12px;
+    font-family: "gotham-rounded-book";
+}
 #ups-devops .li-tab-mar > img {
     width: 70%;
 }
@@ -164,10 +171,10 @@
 	background-color: transparent;
 }
 #ups-devops #testimonial {
-    padding-bottom: 0;
+    padding-bottom: 25px;
     }
  #ups-devops .clearfix {
-    padding: 10px 0 0;
+    padding: 0;
 }
 #ups-devops .gotham-rounded-light.hw-para.devops-count-para.devops-count-para1{
 text-align: inherit;

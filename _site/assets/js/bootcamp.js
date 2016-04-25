@@ -269,6 +269,9 @@ var count = $('.f-option').length;
 // });
 
 // });
+ $(".devopss-fa-arrow-left").click(function(){
+    window.history.back();
+ });
 
  });
 
