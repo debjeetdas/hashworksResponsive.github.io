@@ -19,7 +19,18 @@
 .hw-started.log-clr-backgrnd.container-fluid.bootcamp-ribbon-div {
     width: 100%;
 }
+.bootcamp-devops-img > img {
+    display: none;
+}
 @media screen and (max-width: 1199px) {
+  #Layer_1 {
+    display: none;
+ }
+ .bootcamp-devops-img > img {
+    display: block;
+    margin-left: 10px;
+}
+}
   .bc-desk div#bootcamp-filter-total {
     padding-top: 0;
     margin-top: 15px;

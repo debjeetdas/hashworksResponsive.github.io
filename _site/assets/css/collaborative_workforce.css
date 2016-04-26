@@ -19,6 +19,9 @@
  .caret.collaborative-caret {
     display: none;
 }
+#cw-responsive .slick-slider {
+    margin-bottom: 0px;
+}
 .collobo-hw-main-heading{
         font-size: 14px;
         text-align: initial;
