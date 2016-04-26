@@ -23,13 +23,12 @@
     display: none;
 }
 @media screen and (max-width: 1199px) {
- .bc-desk #Layer_1 {
+  #Layer_1 {
     display: none;
  }
  .bootcamp-devops-img > img {
     display: block;
     margin-left: 10px;
-}
 }
   .bc-desk div#bootcamp-filter-total {
     padding-top: 0;
@@ -208,14 +207,14 @@
     border-bottom: 5px solid #0ab4c5;
   }
   #bootcamp-filter-total-no{
-  	display: none;
+    display: none;
   }
   .bc-desk .checkbox-border-right-padding,.bc-desk .checkbox-border-left-padding{
-  	border:none !important;
-  	padding: 0;
+    border:none !important;
+    padding: 0;
   }
   .bc-desk div#bootcamp-filter-controls label{
-  	margin: 0;
+    margin: 0;
   }
 }
 
@@ -256,7 +255,7 @@
   display: none;
  }
   .bc-mob{
-  	display: block;
+    display: block;
   }
   .bootcamp-main-heading {
     font-size: 18px;
