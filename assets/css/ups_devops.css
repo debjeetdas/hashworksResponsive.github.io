@@ -101,6 +101,12 @@
 }
 }
 @media screen and (max-width: 767px) {
+    .devopss-fa-arrow-left {
+    cursor: pointer;
+}
+#ups-devops .fa-3x {
+    font-size: 1em;
+}
 #ups-devops .gotham-rounded-light.hw-main-heading.clr-white.h-approch{
     font-size: 11px;
 }

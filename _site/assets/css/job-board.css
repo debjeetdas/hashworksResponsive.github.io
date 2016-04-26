@@ -29,6 +29,7 @@
     	padding-bottom: 15px;
     	border-bottom: 1px solid #bebebe;
     	width: 100%;
+    	cursor: pointer;
 	}
 	.job-row{
     	margin-top: 15px;
