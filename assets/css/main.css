@@ -663,10 +663,10 @@ html {
 			margin-top: 28px;
 		}
 
-		.div-margin-left {
+		/*.div-margin-left {
 			margin-left: 100px;
 			margin-right: 100px;
-		}
+		}*/
 
 		.para{
 			color: #7e7e7e;
@@ -850,6 +850,7 @@ html {
 		.hw-tools-list {
 			padding: 40px 0 50px;
 		}
+
 
 		.hw-tools-details {
 			margin: 0 50px;
@@ -3638,6 +3639,10 @@ img#big-ipad {
 /* Start : Portfolio.css */
 
 @media screen and (max-width: 1199px){
+	.portfolio-custom-btn{
+		font-family: "gotham-rounded-light";
+		text-transform: none;
+	}
 	.h-approch {
 	    padding: 10px 0;
 	}
@@ -3783,6 +3788,15 @@ img#big-ipad {
 	color: #000;
 }
 @media screen and (max-width: 767px){	
+	.resp-pf .portfolio-hw-tools-list{
+		padding-top: 15px;
+		padding-bottom: 0;
+		margin-bottom: 22px;
+	}
+	.resp-pf .portfolio-client-backgrnd {
+		margin-bottom: 20px;
+		background-color: #ddd;
+	}
 	.hw-tools-details {
 	    margin: 0 30px;
 	}
@@ -3793,7 +3807,8 @@ img#big-ipad {
 		font-size: 14px;  /*30px*/
 	}
 	.hw-font-heading{
-		font-size: 18px;
+		font-size: 18px !important;
+		margin-top: 20px;
 	}
 	.hw-heading{
 		font-size: 12px;

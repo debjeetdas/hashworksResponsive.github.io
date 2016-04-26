@@ -23,7 +23,7 @@
     display: none;
 }
 @media screen and (max-width: 1199px) {
-  #Layer_1 {
+ .bc-desk #Layer_1 {
     display: none;
  }
  .bootcamp-devops-img > img {

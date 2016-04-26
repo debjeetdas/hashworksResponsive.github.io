@@ -1923,7 +1923,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
           {
             breakpoint: 1920,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 3,
               slidesToScroll: 1
             }
           },
